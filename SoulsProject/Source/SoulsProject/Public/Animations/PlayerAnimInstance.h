@@ -17,4 +17,7 @@ class SOULSPROJECT_API UPlayerAnimInstance : public UAnimInstance
 protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	float currentVelocity{0.0f};	//Direct initialization, prevents C++ from auto converting values declared.
+
+	UFUNCTION(BlueprintCallable)
+	void UpdateVelocity();
 };
