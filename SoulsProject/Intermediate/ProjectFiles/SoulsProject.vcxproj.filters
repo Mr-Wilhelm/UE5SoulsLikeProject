@@ -11,6 +11,7 @@
     <None Include="..\..\Source\SoulsProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -47,11 +48,35 @@
     <ClCompile Include="..\..\Source\SoulsProject\Private\Throwaway.cpp">
       <Filter>Source\SoulsProject\Private</Filter>
     </ClCompile>
+    <Filter Include="Source\SoulsProject\Private\Animations">
+      <UniqueIdentifier>{5F9FCBBF-8804-34F4-9184-D820541CEBE7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\PlayerAnimInstance.cpp">
+      <Filter>Source\SoulsProject\Private\Animations</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulsProject\Private\Characters">
+      <UniqueIdentifier>{869AE1DA-63D8-3BE5-9A0F-683908F90F1E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\PlayerCharacter.cpp">
+      <Filter>Source\SoulsProject\Private\Characters</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulsProject\Public">
       <UniqueIdentifier>{6B782397-9D25-3209-AB4A-50F531446EBF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Throwaway.h">
       <Filter>Source\SoulsProject\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulsProject\Public\Animations">
+      <UniqueIdentifier>{430A11A6-712D-3A04-8754-0155F46EAF8F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\PlayerAnimInstance.h">
+      <Filter>Source\SoulsProject\Public\Animations</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulsProject\Public\Characters">
+      <UniqueIdentifier>{2DA923DE-F808-31D9-B9E2-CD758A92C5E5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\PlayerCharacter.h">
+      <Filter>Source\SoulsProject\Public\Characters</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

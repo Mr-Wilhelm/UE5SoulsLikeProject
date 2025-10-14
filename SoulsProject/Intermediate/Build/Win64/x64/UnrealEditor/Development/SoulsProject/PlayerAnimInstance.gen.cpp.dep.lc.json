@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\unrealeditor\\inc\\soulsproject\\uht\\playeraniminstance.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\x64\\soulsprojecteditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\soulsproject\\definitions.soulsproject.h",
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\source\\soulsproject\\public\\animations\\playeraniminstance.h",
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\unrealeditor\\inc\\soulsproject\\uht\\playeraniminstance.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
