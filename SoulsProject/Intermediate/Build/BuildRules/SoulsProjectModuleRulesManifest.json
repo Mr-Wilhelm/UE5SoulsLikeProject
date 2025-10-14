@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\PersonalProjects\\UE5\\SoulsLike\\UE5SoulsLikeProject\\SoulsProject\\Source\\SoulsProject\\SoulsProject.Build.cs",
+		"C:\\PersonalProjects\\UE5\\SoulsLike\\UE5SoulsLikeProject\\SoulsProject\\Source\\SoulsProject.Target.cs",
+		"C:\\PersonalProjects\\UE5\\SoulsLike\\UE5SoulsLikeProject\\SoulsProject\\Source\\SoulsProjectEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

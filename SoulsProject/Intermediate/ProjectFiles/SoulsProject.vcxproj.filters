@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\SoulsProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SoulsProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SoulsProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\SoulsProject">
+      <UniqueIdentifier>{91A13E6B-886F-3940-8F97-EDF5B2E727E4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SoulsProject\SoulsProject.Build.cs">
+      <Filter>Source\SoulsProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\SoulsProject\SoulsProject.cpp">
+      <Filter>Source\SoulsProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulsProject\SoulsProject.h">
+      <Filter>Source\SoulsProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulsProject\Private">
+      <UniqueIdentifier>{61E7D8C6-2876-3BCC-9B31-02992BA16C21}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Throwaway.cpp">
+      <Filter>Source\SoulsProject\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulsProject\Public">
+      <UniqueIdentifier>{6B782397-9D25-3209-AB4A-50F531446EBF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Throwaway.h">
+      <Filter>Source\SoulsProject\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
