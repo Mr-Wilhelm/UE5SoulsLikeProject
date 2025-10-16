@@ -30,8 +30,9 @@ void ULockOnComponent::StartLockon(float lockonRange)
 	FCollisionShape sphere{ FCollisionShape::MakeSphere(lockonRange) };	//makes a sphere with a radius of 750.0f
 	FCollisionQueryParams ignoreParams{ FName{TEXT("Ignore Collision Params")}, false, GetOwner()};	//ignores the owner (the player) so you can't lock on to yourself
 
+	//SweepMultiByChannel() --- Returns all shapes in the collision
 
-	bool hasFoundTarget{ GetWorld()->SweepSingleByChannel(	//checks a shape and returns the first blocking hit
+	bool hasFoundTarget{ GetWorld()->SweepSingleByChannel(	//checks a shape and returns the single first blocking hit, only returns one.
 		outResult,	//trace hit
 		currentLocation,	//start location
 		currentLocation,	//end location
