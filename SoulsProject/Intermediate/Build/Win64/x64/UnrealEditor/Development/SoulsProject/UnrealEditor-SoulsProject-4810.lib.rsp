@@ -7,6 +7,7 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\SoulsProjectEditor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
+"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\LockOnComponent.gen.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\PlayerAnimInstance.gen.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\PlayerCharacter.gen.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\SoulsProject.init.gen.cpp.obj"
@@ -15,5 +16,6 @@
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\Throwaway.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\PlayerAnimInstance.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\PlayerCharacter.cpp.obj"
+"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\LockOnComponent.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\Default.rc2.res"
 /OUT:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\UnrealEditor-SoulsProject-4810.lib"
