@@ -23,9 +23,26 @@ void ULockOnComponent::BeginPlay()
 	
 }
 
-void ULockOnComponent::StartLockon()
+void ULockOnComponent::StartLockon(float lockonRange)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Lockon Started"));
+	FHitResult outResult;
+	FVector currentLocation{ GetOwner()->GetActorLocation() }; //get owner because this is on a component
+	FCollisionShape sphere{ FCollisionShape::MakeSphere(lockonRange) };	//makes a sphere with a radius of 750.0f
+	FCollisionQueryParams ignoreParams{ FName{TEXT("Ignore Collision Params")}, false, GetOwner()};	//ignores the owner (the player) so you can't lock on to yourself
+
+
+	bool hasFoundTarget{ GetWorld()->SweepSingleByChannel(	//checks a shape and returns the first blocking hit
+		outResult,	//trace hit
+		currentLocation,	//start location
+		currentLocation,	//end location
+		FQuat::Identity,	//rotation
+		ECollisionChannel::ECC_GameTraceChannel1,	//The channel to trace
+		sphere,		//trace shape
+		ignoreParams) };	//what to ignore
+
+	if (!hasFoundTarget) { return; }
+
+	UE_LOG(LogTemp, Warning, TEXT("Actor Detected: %s"), *outResult.GetActor()->GetName());
 }
 
 
