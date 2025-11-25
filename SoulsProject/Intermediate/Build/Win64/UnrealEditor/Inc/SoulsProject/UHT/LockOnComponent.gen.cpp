@@ -49,6 +49,7 @@ void EmptyLinkFunctionForGeneratedCodeLockOnComponent() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ULockOnComponent_StartLockon_Statics::Function_MetaDataParams[] = {
+		{ "CPP_Default_lockonRange", "750.000000" },
 		{ "ModuleRelativePath", "Public/Combat/LockOnComponent.h" },
 	};
 #endif
@@ -85,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeLockOnComponent() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ULockOnComponent_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ULockOnComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ULockOnComponent_StartLockon, "StartLockon" }, // 2046698817
+		{ &Z_Construct_UFunction_ULockOnComponent_StartLockon, "StartLockon" }, // 3235375785
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ULockOnComponent_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -133,9 +134,9 @@ void EmptyLinkFunctionForGeneratedCodeLockOnComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ULockOnComponent, ULockOnComponent::StaticClass, TEXT("ULockOnComponent"), &Z_Registration_Info_UClass_ULockOnComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULockOnComponent), 2505256798U) },
+		{ Z_Construct_UClass_ULockOnComponent, ULockOnComponent::StaticClass, TEXT("ULockOnComponent"), &Z_Registration_Info_UClass_ULockOnComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULockOnComponent), 4046499581U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_753465883(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_2165461060(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

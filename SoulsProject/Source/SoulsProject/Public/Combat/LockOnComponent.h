@@ -23,7 +23,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable)
-		void StartLockon(float lockonRange);
+		void StartLockon(float lockonRange = 750.0f);
 
 public:	
 	// Called every frame
