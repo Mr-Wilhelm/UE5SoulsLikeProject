@@ -2,6 +2,8 @@
 
 
 #include "Combat/LockOnComponent.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"	//the class we defined in the header
 
 // Sets default values for this component's properties
 ULockOnComponent::ULockOnComponent()
@@ -19,16 +21,17 @@ void ULockOnComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	ownerRef = GetOwner<ACharacter>();
+	controller = GetWorld()->GetFirstPlayerController();	//grabs the first controller, which will be the player. Useful if there are multiple controllers
+	movementComp = ownerRef->GetCharacterMovement();
 }
 
 void ULockOnComponent::StartLockon(float lockonRange)
 {
 	FHitResult outResult;
-	FVector currentLocation{ GetOwner()->GetActorLocation() }; //get owner because this is on a component
+	FVector currentLocation{ ownerRef->GetActorLocation() }; //get owner because this is on a component
 	FCollisionShape sphere{ FCollisionShape::MakeSphere(lockonRange) };	//makes a sphere with a radius of 750.0f
-	FCollisionQueryParams ignoreParams{ FName{TEXT("Ignore Collision Params")}, false, GetOwner()};	//ignores the owner (the player) so you can't lock on to yourself
+	FCollisionQueryParams ignoreParams{ FName{TEXT("Ignore Collision Params")}, false, ownerRef};	//ignores the owner (the player) so you can't lock on to yourself
 
 	//SweepMultiByChannel() --- Returns all shapes in the collision
 
@@ -43,7 +46,9 @@ void ULockOnComponent::StartLockon(float lockonRange)
 
 	if (!hasFoundTarget) { return; }
 
-	UE_LOG(LogTemp, Warning, TEXT("Actor Detected: %s"), *outResult.GetActor()->GetName());
+	controller->SetIgnoreLookInput(true);	//ignores the look input, making the camera static
+	movementComp->bOrientRotationToMovement = false;	//character shouldn't rotate in their direction of movement.
+	movementComp->bUseControllerDesiredRotation = true;	//these are behaviours, hence the "b" at the start
 }
 
 

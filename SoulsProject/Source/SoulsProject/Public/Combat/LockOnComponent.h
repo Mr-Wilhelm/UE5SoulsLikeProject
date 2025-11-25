@@ -12,6 +12,10 @@ class SOULSPROJECT_API ULockOnComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
+	ACharacter* ownerRef;	//using ACharacter and not AActor because ACharacter contains a function
+	APlayerController* controller;
+	class UCharacterMovementComponent* movementComp;
+
 public:	
 	// Sets default values for this component's properties
 	ULockOnComponent();
