@@ -16,11 +16,13 @@ class SOULSPROJECT_API ULockOnComponent : public UActorComponent
 	APlayerController* controller;
 	class UCharacterMovementComponent* movementComp;
 
+	class USpringArmComponent* springArmComp;
+
 public:	
 	// Sets default values for this component's properties
 	ULockOnComponent();
 
-
+	AActor* targetActor;
 
 protected:
 	// Called when the game starts
