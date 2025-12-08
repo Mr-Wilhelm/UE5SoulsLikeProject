@@ -31,6 +31,12 @@ protected:
 	UFUNCTION(BlueprintCallable)
 		void StartLockon(float lockonRange = 750.0f);
 
+	UFUNCTION(BlueprintCallable)
+		void EndLockon();
+
+	UFUNCTION(BlueprintCallable)
+		void ToggleLockon(float lockonRange = 750.0f);
+
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;

@@ -56,7 +56,31 @@ void ULockOnComponent::StartLockon(float lockonRange)
 	movementComp->bOrientRotationToMovement = false;	//character shouldn't rotate in their direction of movement.
 	movementComp->bUseControllerDesiredRotation = true;	//these are behaviours, hence the "b" at the start
 
-	springArmComp->TargetOffset = FVector{0.0f, 0.0f, 50};
+	springArmComp->TargetOffset = FVector{0.0f, 0.0f, 50.0f};
+}
+
+void ULockOnComponent::EndLockon()
+{
+	targetActor = nullptr;
+
+	movementComp->bOrientRotationToMovement = true;
+	movementComp->bUseControllerDesiredRotation = false;
+
+	springArmComp->TargetOffset = FVector{ 0.0f, 0.0f, 0.0f };
+
+	controller->ResetIgnoreLookInput();	//just reset everything, this apparently works easier?
+}
+
+void ULockOnComponent::ToggleLockon(float lockonRange)
+{
+	if (IsValid(targetActor)) 
+	{
+		EndLockon();
+	}
+	else
+	{
+		StartLockon();
+	}
 }
 
 
