@@ -94,6 +94,14 @@ void ULockOnComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 	FVector currentLocation = { ownerRef->GetActorLocation() };	//start pos
 	FVector targetLocation = { targetActor->GetActorLocation() };	//end pos
 
+	double targetDistance = FVector::Distance(currentLocation, targetLocation);
+
+	if (targetDistance >= breakDistance)
+	{
+		EndLockon();
+		return;
+	}
+
 	targetLocation.Z -= 75.0f;
 
 	FRotator lockOnRotation{ UKismetMathLibrary::FindLookAtRotation(currentLocation, targetLocation) };	//lock rotation on to end point from start point

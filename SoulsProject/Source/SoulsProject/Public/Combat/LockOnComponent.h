@@ -18,6 +18,7 @@ class SOULSPROJECT_API ULockOnComponent : public UActorComponent
 
 	class USpringArmComponent* springArmComp;
 
+
 public:	
 	// Sets default values for this component's properties
 	ULockOnComponent();
@@ -36,6 +37,9 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 		void ToggleLockon(float lockonRange = 750.0f);
+
+	UPROPERTY(EditAnywhere)
+		double breakDistance{ 1000.0f };
 
 public:	
 	// Called every frame
