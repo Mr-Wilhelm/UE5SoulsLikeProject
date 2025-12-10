@@ -81,6 +81,12 @@
     <ClCompile Include="..\..\Source\SoulsProject\Private\Combat\TraceComponent.cpp">
       <Filter>Source\SoulsProject\Private\Combat</Filter>
     </ClCompile>
+    <Filter Include="Source\SoulsProject\Private\Interfaces">
+      <UniqueIdentifier>{7ED319D6-E43C-3F94-A70C-E10AEFD6D756}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Interfaces\Enemy.cpp">
+      <Filter>Source\SoulsProject\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulsProject\Public">
       <UniqueIdentifier>{6B782397-9D25-3209-AB4A-50F531446EBF}</UniqueIdentifier>
     </Filter>
@@ -119,6 +125,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\TraceComponent.h">
       <Filter>Source\SoulsProject\Public\Combat</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulsProject\Public\Interfaces">
+      <UniqueIdentifier>{3D606604-9A62-3BA7-9355-82228985F69D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\Enemy.h">
+      <Filter>Source\SoulsProject\Public\Interfaces</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
