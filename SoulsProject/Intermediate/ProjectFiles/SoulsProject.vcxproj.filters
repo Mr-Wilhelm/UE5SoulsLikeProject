@@ -57,6 +57,9 @@
     <Filter Include="Source\SoulsProject\Private\Characters">
       <UniqueIdentifier>{869AE1DA-63D8-3BE5-9A0F-683908F90F1E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\BossCharacter.cpp">
+      <Filter>Source\SoulsProject\Private\Characters</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\PlayerActionsComponent.cpp">
       <Filter>Source\SoulsProject\Private\Characters</Filter>
     </ClCompile>
@@ -87,6 +90,9 @@
     <ClCompile Include="..\..\Source\SoulsProject\Private\Interfaces\Enemy.cpp">
       <Filter>Source\SoulsProject\Private\Interfaces</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Interfaces\PlayerInterface.cpp">
+      <Filter>Source\SoulsProject\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulsProject\Public">
       <UniqueIdentifier>{6B782397-9D25-3209-AB4A-50F531446EBF}</UniqueIdentifier>
     </Filter>
@@ -102,6 +108,9 @@
     <Filter Include="Source\SoulsProject\Public\Characters">
       <UniqueIdentifier>{2DA923DE-F808-31D9-B9E2-CD758A92C5E5}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\BossCharacter.h">
+      <Filter>Source\SoulsProject\Public\Characters</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\PlayerActionsComponent.h">
       <Filter>Source\SoulsProject\Public\Characters</Filter>
     </ClInclude>
@@ -130,6 +139,9 @@
       <UniqueIdentifier>{3D606604-9A62-3BA7-9355-82228985F69D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\Enemy.h">
+      <Filter>Source\SoulsProject\Public\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\PlayerInterface.h">
       <Filter>Source\SoulsProject\Public\Interfaces</Filter>
     </ClInclude>
   </ItemGroup>

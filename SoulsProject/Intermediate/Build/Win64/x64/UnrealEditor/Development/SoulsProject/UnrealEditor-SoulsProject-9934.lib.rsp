@@ -8,6 +8,7 @@
 /NODEFAULTLIB
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\SoulsProjectEditor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\BlockingComponent.gen.cpp.obj"
+"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\BossCharacter.gen.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\CombatComponent.gen.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\Enemy.gen.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\LockOnComponent.gen.cpp.obj"
@@ -29,5 +30,6 @@
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\LockOnComponent.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\TraceComponent.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\Enemy.cpp.obj"
+"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\BossCharacter.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\Default.rc2.res"
 /OUT:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\UnrealEditor-SoulsProject-9934.lib"

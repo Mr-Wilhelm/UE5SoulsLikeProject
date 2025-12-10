@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_APlayerCharacter();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_APlayerCharacter_NoRegister();
+	SOULSPROJECT_API UClass* Z_Construct_UClass_UPlayerInterface_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_SoulsProject();
 // End Cross Module References
 	void APlayerCharacter::StaticRegisterNativesAPlayerCharacter()
@@ -28,6 +29,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+		static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -43,6 +45,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		{ "ModuleRelativePath", "Public/Characters/PlayerCharacter.h" },
 	};
 #endif
+		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_APlayerCharacter_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UPlayerInterface_NoRegister, (int32)VTABLE_OFFSET(APlayerCharacter, IPlayerInterface), false },  // 1112209548
+		};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::InterfaceParams) < 64);
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlayerCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlayerCharacter>::IsAbstract,
 	};
@@ -53,11 +59,11 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		DependentSingletons,
 		nullptr,
 		nullptr,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_APlayerCharacter_Statics::Class_MetaDataParams)
 	};
@@ -80,9 +86,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerCharacter, APlayerCharacter::StaticClass, TEXT("APlayerCharacter"), &Z_Registration_Info_UClass_APlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerCharacter), 1847627002U) },
+		{ Z_Construct_UClass_APlayerCharacter, APlayerCharacter::StaticClass, TEXT("APlayerCharacter"), &Z_Registration_Info_UClass_APlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerCharacter), 931826692U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerCharacter_h_1653103778(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerCharacter_h_2978764631(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

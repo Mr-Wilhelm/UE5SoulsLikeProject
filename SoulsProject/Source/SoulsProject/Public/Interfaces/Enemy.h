@@ -5,10 +5,9 @@
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
 #include "Enemy.generated.h"
-
 // This class does not need to be modified.
 UINTERFACE(MinimalAPI)
-class UEnemy : public UInterface
+class UEnemy : public UInterface	//used to verify the interface
 {
 	GENERATED_BODY()
 };
@@ -16,7 +15,7 @@ class UEnemy : public UInterface
 /**
  * 
  */
-class SOULSPROJECT_API IEnemy
+class SOULSPROJECT_API IEnemy	//the actual interface
 {
 	GENERATED_BODY()
 

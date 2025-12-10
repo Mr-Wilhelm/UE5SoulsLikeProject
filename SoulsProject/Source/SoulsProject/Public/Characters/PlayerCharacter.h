@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Interfaces/PlayerInterface.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
-class SOULSPROJECT_API APlayerCharacter : public ACharacter
+class SOULSPROJECT_API APlayerCharacter : public ACharacter, public IPlayerInterface
 {
 	GENERATED_BODY()
 
