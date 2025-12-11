@@ -6,6 +6,7 @@
 #include "GameFramework/CharacterMovementComponent.h"	//the class we defined in the header
 #include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Interfaces/Enemy.h"
 
 // Sets default values for this component's properties
 ULockOnComponent::ULockOnComponent()
@@ -50,6 +51,8 @@ void ULockOnComponent::StartLockon(float lockonRange)
 
 	if (!hasFoundTarget) { return; }
 
+	if (!outResult.GetActor()->Implements<UEnemy>()) { return; }	//sanity check - if enemy has no interface, do not lock on
+
 	targetActor = outResult.GetActor();
 
 	controller->SetIgnoreLookInput(true);	//ignores the look input, making the camera static
@@ -57,11 +60,15 @@ void ULockOnComponent::StartLockon(float lockonRange)
 	movementComp->bUseControllerDesiredRotation = true;	//these are behaviours, hence the "b" at the start
 
 	springArmComp->TargetOffset = FVector{0.0f, 0.0f, 50.0f};
+
+	IEnemy::Execute_OnSelect(targetActor);	//execute the interface function with name after the underscore (e.g. Execute_FunctionName() )
 }
 
 void ULockOnComponent::EndLockon()
 {
-	targetActor = nullptr;
+	IEnemy::Execute_OnDeselect(targetActor);
+
+	targetActor = nullptr;	//basically just reset all the values coded in LockOn
 
 	movementComp->bOrientRotationToMovement = true;
 	movementComp->bUseControllerDesiredRotation = false;
@@ -69,6 +76,8 @@ void ULockOnComponent::EndLockon()
 	springArmComp->TargetOffset = FVector{ 0.0f, 0.0f, 0.0f };
 
 	controller->ResetIgnoreLookInput();	//just reset everything, this apparently works easier?
+
+
 }
 
 void ULockOnComponent::ToggleLockon(float lockonRange)

@@ -38,7 +38,9 @@
             "c:\\ue5\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
             "c:\\ue5\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl",
             "c:\\ue5\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\springarmcomponent.h",
-            "c:\\ue5\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\springarmcomponent.generated.h"
+            "c:\\ue5\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\springarmcomponent.generated.h",
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\source\\soulsproject\\public\\interfaces\\enemy.h",
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\unrealeditor\\inc\\soulsproject\\uht\\enemy.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
