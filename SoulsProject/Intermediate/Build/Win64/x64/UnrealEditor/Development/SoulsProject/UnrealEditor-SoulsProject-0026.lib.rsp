@@ -3,7 +3,7 @@
 /MACHINE:x64
 /SUBSYSTEM:WINDOWS
 /DEF
-/NAME:"UnrealEditor-SoulsProject-2350.dll"
+/NAME:"UnrealEditor-SoulsProject-0026.dll"
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\SoulsProjectEditor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
@@ -34,4 +34,4 @@
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\PlayerInterface.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\LockOnComponent.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\Default.rc2.res"
-/OUT:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\UnrealEditor-SoulsProject-2350.lib"
+/OUT:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\UnrealEditor-SoulsProject-0026.lib"

@@ -6,6 +6,8 @@
 #include "Components/ActorComponent.h"
 #include "LockOnComponent.generated.h"
 
+//an event taking in one parameter --- Signature distinguishes the delegate type from  a delegate instance
+DECLARE_DYNAMIC_MULTICAST_SPARSE_DELEGATE_OneParam(FOnUpdatedTargetSignature, ULockOnComponent, onUpdatedTargetDelegate, AActor*, newTargetActorRef );
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class SOULSPROJECT_API ULockOnComponent : public UActorComponent
@@ -24,6 +26,9 @@ public:
 	ULockOnComponent();
 
 	AActor* targetActor;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnUpdatedTargetSignature onUpdatedTargetDelegate;
 
 protected:
 	// Called when the game starts

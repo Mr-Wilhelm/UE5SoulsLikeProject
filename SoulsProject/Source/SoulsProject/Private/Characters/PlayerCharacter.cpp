@@ -2,6 +2,7 @@
 
 
 #include "Characters/PlayerCharacter.h"
+#include "Animations/PlayerAnimInstance.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -16,6 +17,7 @@ void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	playerAnim = Cast<UPlayerAnimInstance>(GetMesh()->GetAnimInstance());
 }
 
 // Called every frame

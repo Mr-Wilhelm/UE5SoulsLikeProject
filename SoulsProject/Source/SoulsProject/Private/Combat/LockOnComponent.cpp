@@ -62,6 +62,8 @@ void ULockOnComponent::StartLockon(float lockonRange)
 	springArmComp->TargetOffset = FVector{0.0f, 0.0f, 50.0f};
 
 	IEnemy::Execute_OnSelect(targetActor);	//execute the interface function with name after the underscore (e.g. Execute_FunctionName() )
+
+	onUpdatedTargetDelegate.Broadcast(targetActor);	//broadcast this event (tell other classes it has occurred)
 }
 
 void ULockOnComponent::EndLockon()
@@ -77,7 +79,7 @@ void ULockOnComponent::EndLockon()
 
 	controller->ResetIgnoreLookInput();	//just reset everything, this apparently works easier?
 
-
+	onUpdatedTargetDelegate.Broadcast(targetActor);
 }
 
 void ULockOnComponent::ToggleLockon(float lockonRange)
