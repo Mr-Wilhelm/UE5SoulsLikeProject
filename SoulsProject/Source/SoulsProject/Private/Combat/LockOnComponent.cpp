@@ -58,6 +58,8 @@ void ULockOnComponent::StartLockon(float lockonRange)
 	controller->SetIgnoreLookInput(true);	//ignores the look input, making the camera static
 	movementComp->bOrientRotationToMovement = false;	//character shouldn't rotate in their direction of movement.
 	movementComp->bUseControllerDesiredRotation = true;	//these are behaviours, hence the "b" at the start
+	
+	ownerRef->GetCharacterMovement()->MaxWalkSpeed = combatWalkSpeed;
 
 	springArmComp->TargetOffset = FVector{0.0f, 0.0f, 50.0f};
 
@@ -74,6 +76,8 @@ void ULockOnComponent::EndLockon()
 
 	movementComp->bOrientRotationToMovement = true;
 	movementComp->bUseControllerDesiredRotation = false;
+
+	ownerRef->GetCharacterMovement()->MaxWalkSpeed = freeWalkSpeed;
 
 	springArmComp->TargetOffset = FVector{ 0.0f, 0.0f, 0.0f };
 

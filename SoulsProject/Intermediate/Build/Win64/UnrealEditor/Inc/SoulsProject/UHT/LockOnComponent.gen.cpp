@@ -211,6 +211,14 @@ void FOnUpdatedTargetSignature_DelegateWrapper(const FMulticastScriptDelegate& O
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_breakDistance_MetaData[];
 #endif
 		static const UECodeGen_Private::FDoublePropertyParams NewProp_breakDistance;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_freeWalkSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_freeWalkSpeed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_combatWalkSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_combatWalkSpeed;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -247,9 +255,25 @@ void FOnUpdatedTargetSignature_DelegateWrapper(const FMulticastScriptDelegate& O
 	};
 #endif
 	const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_ULockOnComponent_Statics::NewProp_breakDistance = { "breakDistance", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ULockOnComponent, breakDistance), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ULockOnComponent_Statics::NewProp_breakDistance_MetaData), Z_Construct_UClass_ULockOnComponent_Statics::NewProp_breakDistance_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ULockOnComponent_Statics::NewProp_freeWalkSpeed_MetaData[] = {
+		{ "Category", "LockOnComponent" },
+		{ "ModuleRelativePath", "Public/Combat/LockOnComponent.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ULockOnComponent_Statics::NewProp_freeWalkSpeed = { "freeWalkSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ULockOnComponent, freeWalkSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ULockOnComponent_Statics::NewProp_freeWalkSpeed_MetaData), Z_Construct_UClass_ULockOnComponent_Statics::NewProp_freeWalkSpeed_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ULockOnComponent_Statics::NewProp_combatWalkSpeed_MetaData[] = {
+		{ "Category", "LockOnComponent" },
+		{ "ModuleRelativePath", "Public/Combat/LockOnComponent.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ULockOnComponent_Statics::NewProp_combatWalkSpeed = { "combatWalkSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ULockOnComponent, combatWalkSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ULockOnComponent_Statics::NewProp_combatWalkSpeed_MetaData), Z_Construct_UClass_ULockOnComponent_Statics::NewProp_combatWalkSpeed_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ULockOnComponent_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ULockOnComponent_Statics::NewProp_onUpdatedTargetDelegate,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ULockOnComponent_Statics::NewProp_breakDistance,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ULockOnComponent_Statics::NewProp_freeWalkSpeed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ULockOnComponent_Statics::NewProp_combatWalkSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ULockOnComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ULockOnComponent>::IsAbstract,
@@ -289,9 +313,9 @@ void FOnUpdatedTargetSignature_DelegateWrapper(const FMulticastScriptDelegate& O
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ULockOnComponent, ULockOnComponent::StaticClass, TEXT("ULockOnComponent"), &Z_Registration_Info_UClass_ULockOnComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULockOnComponent), 4099164198U) },
+		{ Z_Construct_UClass_ULockOnComponent, ULockOnComponent::StaticClass, TEXT("ULockOnComponent"), &Z_Registration_Info_UClass_ULockOnComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULockOnComponent), 1108317764U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_1954279947(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_236432294(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_LockOnComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
