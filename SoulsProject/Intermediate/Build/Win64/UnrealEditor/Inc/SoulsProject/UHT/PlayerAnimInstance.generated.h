@@ -22,7 +22,7 @@ class AActor;
  \
 	DECLARE_FUNCTION(execUpdateDirection); \
 	DECLARE_FUNCTION(execHandleUpdatedTarget); \
-	DECLARE_FUNCTION(execUpdateVelocity);
+	DECLARE_FUNCTION(execUpdateSpeed);
 
 
 #define FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Animations_PlayerAnimInstance_h_15_ACCESSORS

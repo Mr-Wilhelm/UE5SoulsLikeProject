@@ -1,6 +1,6 @@
 #include "Animations/PlayerAnimInstance.h"
 
-void UPlayerAnimInstance::UpdateVelocity()
+void UPlayerAnimInstance::UpdateSpeed()
 {
 	APawn* pawnRef{ TryGetPawnOwner() };	//assign the pawn to a variable
 	
@@ -9,7 +9,7 @@ void UPlayerAnimInstance::UpdateVelocity()
 
 	FVector velocity{ pawnRef->GetVelocity() };	//get the velocity component of the pawn
 
-	currentVelocity = static_cast<float>(velocity.Length());	//not a newly created variable, so no direct initialisation
+	currentSpeed = static_cast<float>(velocity.Length());	//not a newly created variable, so no direct initialisation
 }
 
 void UPlayerAnimInstance::HandleUpdatedTarget(AActor* newTargetActor)

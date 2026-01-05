@@ -91,7 +91,7 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Binaries\Win64\UnrealEditor-SoulsProject-0001.dll"
-/IMPLIB:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\UnrealEditor-SoulsProject-0001.sup.lib"
-/PDB:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Binaries\Win64\UnrealEditor-SoulsProject-0001.pdb"
+/OUT:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Binaries\Win64\UnrealEditor-SoulsProject-6951.dll"
+/IMPLIB:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\UnrealEditor-SoulsProject-6951.sup.lib"
+/PDB:"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Binaries\Win64\UnrealEditor-SoulsProject-6951.pdb"
 /ignore:4078
