@@ -2,6 +2,8 @@
 
 
 #include "Combat/CombatComponent.h"
+#include "GameFramework/Character.h"
+#include "Kismet/KismetMathLibrary.h"
 
 // Sets default values for this component's properties
 UCombatComponent::UCombatComponent()
@@ -19,7 +21,7 @@ void UCombatComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	characterRef = GetOwner<ACharacter>();
 	
 }
 
@@ -30,5 +32,14 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
+}
+
+void UCombatComponent::ComboAttack()
+{
+	characterRef->PlayAnimMontage(attackAnims[comboCounter]); //play anim montage at the index
+	comboCounter++;	//increment indexx
+
+	int maxCombo{ attackAnims.Num() };	//.Num gets the number of elements in the array. This is a TArray function
+	comboCounter = UKismetMathLibrary::Wrap(comboCounter, -1, maxCombo - 1);	//wrap around the array, restarting just before the first index (0) and ending at maxCombo - 1
 }
 
