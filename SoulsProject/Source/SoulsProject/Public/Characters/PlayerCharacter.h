@@ -5,10 +5,11 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Interfaces/PlayerInterface.h"
+#include "Interfaces/Fighter.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
-class SOULSPROJECT_API APlayerCharacter : public ACharacter, public IPlayerInterface
+class SOULSPROJECT_API APlayerCharacter : public ACharacter, public IPlayerInterface, public IFighter
 {
 	GENERATED_BODY()
 
@@ -29,5 +30,7 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual float GetDamage() override;	//this means that this will override the GetDamage function from the Fighter Interface
 
 };

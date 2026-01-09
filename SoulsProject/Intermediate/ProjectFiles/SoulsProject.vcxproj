@@ -132,6 +132,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\ToggleTraceNotifyState.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\BossCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -177,6 +182,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Interfaces\Fighter.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Interfaces\PlayerInterface.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -184,6 +194,7 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Throwaway.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\PlayerAnimInstance.h"/>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\ToggleTraceNotifyState.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\BossCharacter.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\PlayerActionsComponent.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\PlayerCharacter.h"/>
@@ -193,6 +204,7 @@
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\LockOnComponent.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\TraceComponent.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\Enemy.h"/>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\Fighter.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\PlayerInterface.h"/>
   </ItemGroup>
   <PropertyGroup>

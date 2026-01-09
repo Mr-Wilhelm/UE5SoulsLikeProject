@@ -34,3 +34,8 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 }
 
+float APlayerCharacter::GetDamage()
+{
+	return 10.0f;
+}
+

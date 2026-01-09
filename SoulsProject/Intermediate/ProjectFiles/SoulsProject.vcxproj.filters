@@ -54,6 +54,9 @@
     <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\PlayerAnimInstance.cpp">
       <Filter>Source\SoulsProject\Private\Animations</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\ToggleTraceNotifyState.cpp">
+      <Filter>Source\SoulsProject\Private\Animations</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulsProject\Private\Characters">
       <UniqueIdentifier>{869AE1DA-63D8-3BE5-9A0F-683908F90F1E}</UniqueIdentifier>
     </Filter>
@@ -90,6 +93,9 @@
     <ClCompile Include="..\..\Source\SoulsProject\Private\Interfaces\Enemy.cpp">
       <Filter>Source\SoulsProject\Private\Interfaces</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Interfaces\Fighter.cpp">
+      <Filter>Source\SoulsProject\Private\Interfaces</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Interfaces\PlayerInterface.cpp">
       <Filter>Source\SoulsProject\Private\Interfaces</Filter>
     </ClCompile>
@@ -103,6 +109,9 @@
       <UniqueIdentifier>{430A11A6-712D-3A04-8754-0155F46EAF8F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\PlayerAnimInstance.h">
+      <Filter>Source\SoulsProject\Public\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\ToggleTraceNotifyState.h">
       <Filter>Source\SoulsProject\Public\Animations</Filter>
     </ClInclude>
     <Filter Include="Source\SoulsProject\Public\Characters">
@@ -139,6 +148,9 @@
       <UniqueIdentifier>{3D606604-9A62-3BA7-9355-82228985F69D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\Enemy.h">
+      <Filter>Source\SoulsProject\Public\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\Fighter.h">
       <Filter>Source\SoulsProject\Public\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Interfaces\PlayerInterface.h">

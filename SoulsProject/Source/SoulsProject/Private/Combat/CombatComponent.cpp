@@ -46,7 +46,7 @@ void UCombatComponent::ComboAttack()
 	comboCounter = UKismetMathLibrary::Wrap(comboCounter, -1, maxCombo - 1);	//wrap around the array, restarting just before the first index (0) and ending at maxCombo - 1
 }
 
-void UCombatComponent::ResetAttack()
+void UCombatComponent::ResetAttackCombatComp()
 {
 	canAttack = true;
 }

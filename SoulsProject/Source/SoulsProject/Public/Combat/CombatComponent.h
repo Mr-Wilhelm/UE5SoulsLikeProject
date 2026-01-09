@@ -40,5 +40,5 @@ public:
 	void ComboAttack();
 
 	UFUNCTION(BlueprintCallable)
-	void ResetAttack();
+	void ResetAttackCombatComp();
 };

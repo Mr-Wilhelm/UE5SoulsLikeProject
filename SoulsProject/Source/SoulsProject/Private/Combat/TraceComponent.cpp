@@ -4,6 +4,7 @@
 #include "Combat/TraceComponent.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Interfaces/Fighter.h"
 
 // Sets default values for this component's properties
 UTraceComponent::UTraceComponent()
@@ -21,6 +22,7 @@ void UTraceComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
+
 	skeletalComp = GetOwner() -> FindComponentByClass<USkeletalMeshComponent>();	//assign to skeletal mesh of whatever the component is attached to
 	
 }
@@ -30,6 +32,8 @@ void UTraceComponent::BeginPlay()
 void UTraceComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	if (!isAttacking) { return; }
 
 	FVector socketStartPos{ skeletalComp->GetSocketLocation(socketStart) };
 	FVector socketEndPos{ skeletalComp->GetSocketLocation(socketEnd) };
@@ -65,5 +69,38 @@ void UTraceComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 			1.0f,	//box lifetime
 			2.0f);	//box thickness
 	}
+
+	if (outResults.Num() == 0) { return; }	//if nothing is hit, return early
+
+	float characterDmg{ 0.0f };	//variable for the characters damage
+
+	IFighter* fighterRef{ Cast<IFighter>(GetOwner()) };	//get a reference to the fighter interface
+
+	if (fighterRef)
+	{
+		characterDmg = fighterRef->GetDamage();	//run the GetDamage function for that character
+	}
+
+	FDamageEvent targetDamageEvent;
+
+	for (const FHitResult& hit: outResults)	//foreach loop, adding & ensures that we get a reference to the variable, which is faster than making a copy
+	{
+		AActor* targetActor{ hit.GetActor() }; 
+
+		if (targetsToIgnore.Contains(targetActor)) { continue; }	//using continue keyword to ensure the function doesn't instantly end.
+		targetActor->TakeDamage( //This is a built in Actor function
+			characterDmg,	//damage amount to apply
+			targetDamageEvent,	//damage event
+			GetOwner()->GetInstigatorController(),	//the controller of the damage
+			GetOwner()	//the actor responsible for the damage
+		);
+
+		targetsToIgnore.AddUnique(targetActor);	//AddUnique ensures the value being added is not in the array
+	}
+}
+
+void UTraceComponent::ResetAttackTraceComp()
+{
+	targetsToIgnore.Empty();
 }
 
