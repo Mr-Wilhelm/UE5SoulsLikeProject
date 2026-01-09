@@ -20,6 +20,8 @@ class SOULSPROJECT_API UCombatComponent : public UActorComponent
 	UPROPERTY(VisibleAnywhere)	//can be viewed but not edited
 	int comboCounter{ 0 };
 
+	bool canAttack{ true };
+
 public:	
 	// Sets default values for this component's properties
 	UCombatComponent();
@@ -36,4 +38,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void ComboAttack();
+
+	UFUNCTION(BlueprintCallable)
+	void ResetAttack();
 };

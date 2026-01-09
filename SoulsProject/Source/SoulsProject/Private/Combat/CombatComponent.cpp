@@ -36,10 +36,18 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 
 void UCombatComponent::ComboAttack()
 {
+	if (!canAttack) { return; }
+
+	canAttack = false;
 	characterRef->PlayAnimMontage(attackAnims[comboCounter]); //play anim montage at the index
 	comboCounter++;	//increment indexx
 
 	int maxCombo{ attackAnims.Num() };	//.Num gets the number of elements in the array. This is a TArray function
 	comboCounter = UKismetMathLibrary::Wrap(comboCounter, -1, maxCombo - 1);	//wrap around the array, restarting just before the first index (0) and ending at maxCombo - 1
+}
+
+void UCombatComponent::ResetAttack()
+{
+	canAttack = true;
 }
 
