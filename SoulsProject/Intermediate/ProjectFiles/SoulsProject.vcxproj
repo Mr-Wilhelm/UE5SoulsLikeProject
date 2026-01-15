@@ -142,6 +142,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\EStat.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\PlayerActionsComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -196,6 +201,7 @@
     <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\PlayerAnimInstance.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\ToggleTraceNotifyState.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\BossCharacter.h"/>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\EStat.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\PlayerActionsComponent.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\PlayerCharacter.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\StatsComponent.h"/>

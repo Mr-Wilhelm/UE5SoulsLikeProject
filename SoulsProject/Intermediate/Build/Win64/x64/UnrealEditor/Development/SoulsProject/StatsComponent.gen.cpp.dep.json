@@ -7,6 +7,7 @@
         "Includes": [
             "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\soulsproject\\definitions.soulsproject.h",
             "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\source\\soulsproject\\public\\characters\\statscomponent.h",
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\source\\soulsproject\\public\\characters\\estat.h",
             "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\unrealeditor\\inc\\soulsproject\\uht\\statscomponent.generated.h"
         ],
         "ImportedModules": [],

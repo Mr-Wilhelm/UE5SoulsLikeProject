@@ -63,6 +63,9 @@
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\BossCharacter.cpp">
       <Filter>Source\SoulsProject\Private\Characters</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\EStat.cpp">
+      <Filter>Source\SoulsProject\Private\Characters</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\PlayerActionsComponent.cpp">
       <Filter>Source\SoulsProject\Private\Characters</Filter>
     </ClCompile>
@@ -118,6 +121,9 @@
       <UniqueIdentifier>{2DA923DE-F808-31D9-B9E2-CD758A92C5E5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\BossCharacter.h">
+      <Filter>Source\SoulsProject\Public\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\EStat.h">
       <Filter>Source\SoulsProject\Public\Characters</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\PlayerActionsComponent.h">
