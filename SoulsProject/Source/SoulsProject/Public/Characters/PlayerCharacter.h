@@ -17,6 +17,24 @@ public:
 	// Sets default values for this character's properties
 	APlayerCharacter();
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class UStatsComponent* statsComponent;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class ULockOnComponent* lockOnComponent;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class UPlayerActionsComponent* playerActionsComponent;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class UTraceComponent* traceComponent;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class UBlockingComponent* blockingComponent;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class UCombatComponent* combatComponent;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -32,5 +50,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	virtual float GetDamage() override;	//this means that this will override the GetDamage function from the Fighter Interface
+
+	virtual bool HasStamina(float staminaCost) override; //overrides the HasStamina function from the player interface. We use player interface because the boss doesn't use stamina, only the player
+
+
 
 };

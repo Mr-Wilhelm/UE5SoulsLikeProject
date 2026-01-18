@@ -4,6 +4,7 @@
 #include "Combat/CombatComponent.h"
 #include "GameFramework/Character.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Interfaces/PlayerInterface.h"
 
 // Sets default values for this component's properties
 UCombatComponent::UCombatComponent()
@@ -36,6 +37,13 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 
 void UCombatComponent::ComboAttack()
 {
+	if (characterRef->Implements<UPlayerInterface>()) //check if the character makes use of UPlayerInterface
+	{
+		IPlayerInterface* playerInterfaceRef{ Cast<IPlayerInterface>(characterRef) };
+
+		if (playerInterfaceRef && !playerInterfaceRef->HasStamina(staminaCost)) { return; }	//check if the interface is there and if the player has enough stamina
+	}
+
 	if (!canAttack) { return; }
 
 	canAttack = false;
@@ -44,6 +52,8 @@ void UCombatComponent::ComboAttack()
 
 	int maxCombo{ attackAnims.Num() };	//.Num gets the number of elements in the array. This is a TArray function
 	comboCounter = UKismetMathLibrary::Wrap(comboCounter, -1, maxCombo - 1);	//wrap around the array, restarting just before the first index (0) and ending at maxCombo - 1
+
+	onAttackPerformedDelegate.Broadcast(staminaCost); //broadcasting the event
 }
 
 void UCombatComponent::ResetAttackCombatComp()

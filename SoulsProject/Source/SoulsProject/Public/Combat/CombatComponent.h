@@ -6,6 +6,13 @@
 #include "Components/ActorComponent.h"
 #include "CombatComponent.generated.h"
 
+//this is how you delcare an event
+DECLARE_DYNAMIC_MULTICAST_SPARSE_DELEGATE_OneParam(
+	FOnAttackPerformedSignature, 
+	UCombatComponent,
+	onAttackPerformedDelegate,
+	float, staminaToDrain
+);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class SOULSPROJECT_API UCombatComponent : public UActorComponent
@@ -22,15 +29,19 @@ class SOULSPROJECT_API UCombatComponent : public UActorComponent
 
 	bool canAttack{ true };
 
+	UPROPERTY(EditAnywhere);
+	float staminaCost{ 5.0f };
+
 public:	
 	// Sets default values for this component's properties
 	UCombatComponent();
 
+	UPROPERTY(BlueprintAssignable)
+	FOnAttackPerformedSignature onAttackPerformedDelegate;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
-
-
 
 public:	
 	// Called every frame
