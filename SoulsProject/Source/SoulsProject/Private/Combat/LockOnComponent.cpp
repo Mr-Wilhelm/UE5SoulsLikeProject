@@ -38,8 +38,6 @@ void ULockOnComponent::StartLockon(float lockonRange)
 	FCollisionShape sphere{ FCollisionShape::MakeSphere(lockonRange) };	//makes a sphere with a radius of 750.0f
 	FCollisionQueryParams ignoreParams{ FName{TEXT("Ignore Collision Params")}, false, ownerRef };	//ignores the owner (the player) so you can't lock on to yourself
 
-	//SweepMultiByChannel() --- Returns all shapes in the collision
-
 	bool hasFoundTarget{ GetWorld()->SweepSingleByChannel(	//checks a shape and returns the single first blocking hit, only returns one.
 		outResult,	//trace hit
 		currentLocation,	//start location
@@ -60,6 +58,7 @@ void ULockOnComponent::StartLockon(float lockonRange)
 	movementComp->bUseControllerDesiredRotation = true;	//these are behaviours, hence the "b" at the start
 	
 	ownerRef->GetCharacterMovement()->MaxWalkSpeed = combatWalkSpeed;
+	isLockedOn = true;
 
 	springArmComp->TargetOffset = FVector{0.0f, 0.0f, 50.0f};
 
@@ -78,6 +77,7 @@ void ULockOnComponent::EndLockon()
 	movementComp->bUseControllerDesiredRotation = false;
 
 	ownerRef->GetCharacterMovement()->MaxWalkSpeed = freeWalkSpeed;
+	isLockedOn = false;
 
 	springArmComp->TargetOffset = FVector{ 0.0f, 0.0f, 0.0f };
 

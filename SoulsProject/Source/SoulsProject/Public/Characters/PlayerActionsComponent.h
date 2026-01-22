@@ -23,6 +23,8 @@ class SOULSPROJECT_API UPlayerActionsComponent : public UActorComponent
 	class IPlayerInterface* playerInterfaceRef;
 
 	class UCharacterMovementComponent* movementComp;
+	
+
 
 	UPROPERTY(EditAnywhere)
 	float sprintCost{ 5.0f };
@@ -39,6 +41,9 @@ public:
 
 	UPROPERTY(BlueprintAssignable)
 	FOnSprintSignature onSprintDelegate;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class ULockOnComponent* lockOnComponent;
 
 protected:
 	// Called when the game starts

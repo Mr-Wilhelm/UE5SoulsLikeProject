@@ -22,6 +22,8 @@ class SOULSPROJECT_API UStatsComponent : public UActorComponent
 	UPROPERTY(EditAnywhere)
 	float staminaDelayDuration{ 2.0 };
 
+
+
 public:	
 	// Sets default values for this component's properties
 	UStatsComponent();

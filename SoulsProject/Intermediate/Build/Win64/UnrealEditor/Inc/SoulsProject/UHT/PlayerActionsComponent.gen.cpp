@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePlayerActionsComponent() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
+	SOULSPROJECT_API UClass* Z_Construct_UClass_ULockOnComponent_NoRegister();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UPlayerActionsComponent();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UPlayerActionsComponent_NoRegister();
 	SOULSPROJECT_API UFunction* Z_Construct_USparseDelegateFunction_SoulsProject_OnSprintSignature__DelegateSignature();
@@ -154,6 +155,10 @@ void FOnSprintSignature_DelegateWrapper(const FMulticastScriptDelegate& OnSprint
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_onSprintDelegate_MetaData[];
 #endif
 		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_onSprintDelegate;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_lockOnComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_lockOnComponent;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -203,11 +208,20 @@ void FOnSprintSignature_DelegateWrapper(const FMulticastScriptDelegate& OnSprint
 	};
 #endif
 	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_onSprintDelegate = { "onSprintDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::SparseMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerActionsComponent, onSprintDelegate), Z_Construct_USparseDelegateFunction_SoulsProject_OnSprintSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_onSprintDelegate_MetaData), Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_onSprintDelegate_MetaData) }; // 1475522075
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_lockOnComponent_MetaData[] = {
+		{ "Category", "PlayerActionsComponent" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/PlayerActionsComponent.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_lockOnComponent = { "lockOnComponent", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerActionsComponent, lockOnComponent), Z_Construct_UClass_ULockOnComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_lockOnComponent_MetaData), Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_lockOnComponent_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerActionsComponent_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_sprintCost,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_walkSpeed,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_sprintSpeed,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_onSprintDelegate,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerActionsComponent_Statics::NewProp_lockOnComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UPlayerActionsComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UPlayerActionsComponent>::IsAbstract,
@@ -247,9 +261,9 @@ void FOnSprintSignature_DelegateWrapper(const FMulticastScriptDelegate& OnSprint
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerActionsComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerActionsComponent, UPlayerActionsComponent::StaticClass, TEXT("UPlayerActionsComponent"), &Z_Registration_Info_UClass_UPlayerActionsComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerActionsComponent), 3198241795U) },
+		{ Z_Construct_UClass_UPlayerActionsComponent, UPlayerActionsComponent::StaticClass, TEXT("UPlayerActionsComponent"), &Z_Registration_Info_UClass_UPlayerActionsComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerActionsComponent), 883653210U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerActionsComponent_h_311734745(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerActionsComponent_h_2937035104(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerActionsComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_PlayerActionsComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

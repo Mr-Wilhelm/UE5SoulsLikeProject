@@ -4,6 +4,7 @@
 #include "Characters/PlayerActionsComponent.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Combat/LockOnComponent.h"
 #include "Interfaces/PlayerInterface.h"
 
 
@@ -26,6 +27,8 @@ void UPlayerActionsComponent::BeginPlay()
 	characterRef = GetOwner<ACharacter>();	//get owner
 	movementComp = characterRef->GetCharacterMovement();	//get the movement component, this is a built in Unreal Engine thing
 
+	lockOnComponent = GetOwner()->FindComponentByClass<ULockOnComponent>();
+
 	if (!characterRef->Implements<UPlayerInterface>()) { return; }	//check if this uses the player interface
 
 	playerInterfaceRef = Cast<IPlayerInterface>(characterRef);	//cast to the player interface which belongs to the character
@@ -43,6 +46,8 @@ void UPlayerActionsComponent::TickComponent(float DeltaTime, ELevelTick TickType
 
 void UPlayerActionsComponent::Sprint()
 {
+	if (lockOnComponent->isLockedOn) { return; }
+
 	if (!playerInterfaceRef->HasStamina(sprintCost))
 	{ 
 		Walk();
@@ -58,6 +63,8 @@ void UPlayerActionsComponent::Sprint()
 
 void UPlayerActionsComponent::Walk()
 {
+	if (lockOnComponent->isLockedOn) { return; }
+
 	movementComp->MaxWalkSpeed = walkSpeed;
 }
 

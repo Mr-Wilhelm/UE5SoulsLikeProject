@@ -30,6 +30,9 @@ public:
 	UPROPERTY(BlueprintAssignable)
 	FOnUpdatedTargetSignature onUpdatedTargetDelegate;
 
+	UPROPERTY(EditAnywhere)
+	bool isLockedOn{ false };
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
