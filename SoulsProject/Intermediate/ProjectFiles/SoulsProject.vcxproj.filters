@@ -51,6 +51,9 @@
     <Filter Include="Source\SoulsProject\Private\Animations">
       <UniqueIdentifier>{5F9FCBBF-8804-34F4-9184-D820541CEBE7}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\BossAnimInstance.cpp">
+      <Filter>Source\SoulsProject\Private\Animations</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\PlayerAnimInstance.cpp">
       <Filter>Source\SoulsProject\Private\Animations</Filter>
     </ClCompile>
@@ -61,6 +64,9 @@
       <UniqueIdentifier>{869AE1DA-63D8-3BE5-9A0F-683908F90F1E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\BossCharacter.cpp">
+      <Filter>Source\SoulsProject\Private\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\EEnemyState.cpp">
       <Filter>Source\SoulsProject\Private\Characters</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\EStat.cpp">
@@ -74,6 +80,12 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\StatsComponent.cpp">
       <Filter>Source\SoulsProject\Private\Characters</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulsProject\Private\Characters\AI">
+      <UniqueIdentifier>{938B921A-5B5C-3281-AB5B-B06FB9FD67D8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\AI\BTT_RangedAttack.cpp">
+      <Filter>Source\SoulsProject\Private\Characters\AI</Filter>
     </ClCompile>
     <Filter Include="Source\SoulsProject\Private\Combat">
       <UniqueIdentifier>{63B2BC7E-4C61-3530-9AAE-A341FC347DC3}</UniqueIdentifier>
@@ -111,6 +123,9 @@
     <Filter Include="Source\SoulsProject\Public\Animations">
       <UniqueIdentifier>{430A11A6-712D-3A04-8754-0155F46EAF8F}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\BossAnimInstance.h">
+      <Filter>Source\SoulsProject\Public\Animations</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\PlayerAnimInstance.h">
       <Filter>Source\SoulsProject\Public\Animations</Filter>
     </ClInclude>
@@ -121,6 +136,9 @@
       <UniqueIdentifier>{2DA923DE-F808-31D9-B9E2-CD758A92C5E5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\BossCharacter.h">
+      <Filter>Source\SoulsProject\Public\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\EEnemyState.h">
       <Filter>Source\SoulsProject\Public\Characters</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\EStat.h">
@@ -134,6 +152,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\StatsComponent.h">
       <Filter>Source\SoulsProject\Public\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulsProject\Public\Characters\AI">
+      <UniqueIdentifier>{6BA38A46-16CE-3D48-82D7-53523C1E7045}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\AI\BTT_RangedAttack.h">
+      <Filter>Source\SoulsProject\Public\Characters\AI</Filter>
     </ClInclude>
     <Filter Include="Source\SoulsProject\Public\Combat">
       <UniqueIdentifier>{8FFB92C8-82A0-37E4-8955-A77909873126}</UniqueIdentifier>

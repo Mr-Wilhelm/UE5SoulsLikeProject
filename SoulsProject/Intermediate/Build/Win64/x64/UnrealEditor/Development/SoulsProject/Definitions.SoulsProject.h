@@ -1,4 +1,4 @@
-#include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/x64/SoulsProjectEditor/Development/Engine/SharedDefinitions.Engine.Cpp20.InclOrderUnreal5_0.h"
+#include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/x64/SoulsProjectEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Cpp20.InclOrderUnreal5_0.h"
 #undef UE_IS_ENGINE_MODULE
 #undef DEPRECATED_FORGAME
 #define DEPRECATED_FORGAME DEPRECATED
@@ -21,4 +21,8 @@
 #define IMPLEMENT_SIGNING_KEY_REGISTRATION() 
 #define DEPRECATED_FORGAME DEPRECATED
 #define UE_DEPRECATED_FORGAME UE_DEPRECATED
+#define WITH_GAMEPLAY_DEBUGGER_CORE 1
+#define WITH_GAMEPLAY_DEBUGGER 1
+#define WITH_GAMEPLAY_DEBUGGER_MENU 1
+#define AIMODULE_API DLLIMPORT
 #define SOULSPROJECT_API DLLEXPORT

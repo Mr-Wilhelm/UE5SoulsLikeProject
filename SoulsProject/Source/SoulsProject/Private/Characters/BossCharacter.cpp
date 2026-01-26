@@ -3,6 +3,8 @@
 
 #include "Characters/BossCharacter.h"
 #include "Characters/StatsComponent.h"
+#include "AIController.h"	//this include needs some funky stuff in the project.build file to not give errors
+#include "BehaviorTree/BlackboardComponent.h"
 
 // Sets default values
 ABossCharacter::ABossCharacter()
@@ -17,6 +19,12 @@ ABossCharacter::ABossCharacter()
 void ABossCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	blackboardComp = GetController<AAIController>() -> GetBlackboardComponent();
+	blackboardComp->SetValueAsEnum(
+		TEXT("CurrentState"),	//Key Name
+		initialState	//value to change to
+	);
 }
 
 // Called every frame
@@ -31,5 +39,14 @@ void ABossCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void ABossCharacter::DetectPawn(APawn* pawnDetected, APawn* pawnToFind)
+{
+	EEnemyState currentState{ static_cast<EEnemyState>(blackboardComp->GetValueAsEnum(TEXT("CurrentState"))) };
+
+	if (pawnDetected != pawnToFind || currentState != EEnemyState::Idle) { return; }
+
+	blackboardComp->SetValueAsEnum(TEXT("CurrentState"), EEnemyState::Range);
 }
 
