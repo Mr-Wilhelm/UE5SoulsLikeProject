@@ -96,6 +96,9 @@
     <ClCompile Include="..\..\Source\SoulsProject\Private\Combat\CombatComponent.cpp">
       <Filter>Source\SoulsProject\Private\Combat</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Combat\EnemyProjectileComponent.cpp">
+      <Filter>Source\SoulsProject\Private\Combat</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Combat\LockOnComponent.cpp">
       <Filter>Source\SoulsProject\Private\Combat</Filter>
     </ClCompile>
@@ -166,6 +169,9 @@
       <Filter>Source\SoulsProject\Public\Combat</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\CombatComponent.h">
+      <Filter>Source\SoulsProject\Public\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\EnemyProjectileComponent.h">
       <Filter>Source\SoulsProject\Public\Combat</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\LockOnComponent.h">

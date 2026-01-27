@@ -3,6 +3,7 @@
 
 #include "Characters/BossCharacter.h"
 #include "Characters/StatsComponent.h"
+#include "Combat/EnemyProjectileComponent.h"
 #include "AIController.h"	//this include needs some funky stuff in the project.build file to not give errors
 #include "BehaviorTree/BlackboardComponent.h"
 
@@ -13,6 +14,7 @@ ABossCharacter::ABossCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	statsComponent = CreateDefaultSubobject<UStatsComponent>(TEXT("Stats Component"));
+	enemyProjectileComponent = CreateDefaultSubobject<UEnemyProjectileComponent>(TEXT("Enemy Projectile Component"));
 }
 
 // Called when the game starts or when spawned
