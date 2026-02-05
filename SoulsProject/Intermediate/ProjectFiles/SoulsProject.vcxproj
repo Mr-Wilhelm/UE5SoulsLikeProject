@@ -197,6 +197,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Combat\EnemyProjectile.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Combat\EnemyProjectileComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -242,6 +247,7 @@
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\AI\BTT_RangedAttack.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\BlockingComponent.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\CombatComponent.h"/>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\EnemyProjectile.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\EnemyProjectileComponent.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\LockOnComponent.h"/>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Combat\TraceComponent.h"/>
