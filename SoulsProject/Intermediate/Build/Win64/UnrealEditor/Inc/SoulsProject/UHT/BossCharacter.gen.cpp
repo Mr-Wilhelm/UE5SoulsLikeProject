@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 	SOULSPROJECT_API UClass* Z_Construct_UClass_ABossCharacter_NoRegister();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UEnemy_NoRegister();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UEnemyProjectileComponent_NoRegister();
+	SOULSPROJECT_API UClass* Z_Construct_UClass_ULookAtPlayerComponent_NoRegister();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UStatsComponent_NoRegister();
 	SOULSPROJECT_API UEnum* Z_Construct_UEnum_SoulsProject_EEnemyState();
 	UPackage* Z_Construct_UPackage__Script_SoulsProject();
@@ -98,6 +99,10 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_enemyProjectileComponent_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_enemyProjectileComponent;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_lookAtPlayerComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_lookAtPlayerComponent;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -142,10 +147,19 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABossCharacter_Statics::NewProp_enemyProjectileComponent = { "enemyProjectileComponent", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABossCharacter, enemyProjectileComponent), Z_Construct_UClass_UEnemyProjectileComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABossCharacter_Statics::NewProp_enemyProjectileComponent_MetaData), Z_Construct_UClass_ABossCharacter_Statics::NewProp_enemyProjectileComponent_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABossCharacter_Statics::NewProp_lookAtPlayerComponent_MetaData[] = {
+		{ "Category", "BossCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/BossCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABossCharacter_Statics::NewProp_lookAtPlayerComponent = { "lookAtPlayerComponent", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABossCharacter, lookAtPlayerComponent), Z_Construct_UClass_ULookAtPlayerComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABossCharacter_Statics::NewProp_lookAtPlayerComponent_MetaData), Z_Construct_UClass_ABossCharacter_Statics::NewProp_lookAtPlayerComponent_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABossCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossCharacter_Statics::NewProp_initialState,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossCharacter_Statics::NewProp_statsComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossCharacter_Statics::NewProp_enemyProjectileComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossCharacter_Statics::NewProp_lookAtPlayerComponent,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ABossCharacter_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UEnemy_NoRegister, (int32)VTABLE_OFFSET(ABossCharacter, IEnemy), false },  // 934961268
@@ -189,9 +203,9 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABossCharacter, ABossCharacter::StaticClass, TEXT("ABossCharacter"), &Z_Registration_Info_UClass_ABossCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABossCharacter), 4167386382U) },
+		{ Z_Construct_UClass_ABossCharacter, ABossCharacter::StaticClass, TEXT("ABossCharacter"), &Z_Registration_Info_UClass_ABossCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABossCharacter), 3403895291U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_2972881323(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_3948553254(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

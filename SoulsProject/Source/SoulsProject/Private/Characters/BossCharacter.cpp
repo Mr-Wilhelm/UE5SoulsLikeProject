@@ -4,6 +4,7 @@
 #include "Characters/BossCharacter.h"
 #include "Characters/StatsComponent.h"
 #include "Combat/EnemyProjectileComponent.h"
+#include "Characters/LookAtPlayerComponent.h"
 #include "AIController.h"	//this include needs some funky stuff in the project.build file to not give errors
 #include "BehaviorTree/BlackboardComponent.h"
 
@@ -15,6 +16,7 @@ ABossCharacter::ABossCharacter()
 
 	statsComponent = CreateDefaultSubobject<UStatsComponent>(TEXT("Stats Component"));
 	enemyProjectileComponent = CreateDefaultSubobject<UEnemyProjectileComponent>(TEXT("Enemy Projectile Component"));
+	lookAtPlayerComponent = CreateDefaultSubobject<ULookAtPlayerComponent>(TEXT("Look At Player Component"));
 }
 
 // Called when the game starts or when spawned

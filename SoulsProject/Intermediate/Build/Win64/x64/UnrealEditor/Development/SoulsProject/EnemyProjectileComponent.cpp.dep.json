@@ -7,7 +7,10 @@
         "Includes": [
             "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\soulsproject\\definitions.soulsproject.h",
             "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\source\\soulsproject\\public\\combat\\enemyprojectilecomponent.h",
-            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\unrealeditor\\inc\\soulsproject\\uht\\enemyprojectilecomponent.generated.h"
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\unrealeditor\\inc\\soulsproject\\uht\\enemyprojectilecomponent.generated.h",
+            "c:\\ue5\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "c:\\ue5\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
+            "c:\\ue5\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

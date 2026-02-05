@@ -5,6 +5,7 @@
 #include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/UnrealEditor/Inc/SoulsProject/UHT/CombatComponent.gen.cpp"
 #include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/UnrealEditor/Inc/SoulsProject/UHT/EEnemyState.gen.cpp"
 #include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/UnrealEditor/Inc/SoulsProject/UHT/Enemy.gen.cpp"
+#include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/UnrealEditor/Inc/SoulsProject/UHT/EnemyProjectileComponent.gen.cpp"
 #include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/UnrealEditor/Inc/SoulsProject/UHT/EStat.gen.cpp"
 #include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/UnrealEditor/Inc/SoulsProject/UHT/Fighter.gen.cpp"
 #include "C:/PersonalProjects/UE5/SoulsLike/UE5SoulsLikeProject/SoulsProject/Intermediate/Build/Win64/UnrealEditor/Inc/SoulsProject/UHT/LockOnComponent.gen.cpp"

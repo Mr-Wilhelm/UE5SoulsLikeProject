@@ -28,6 +28,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UEnemyProjectileComponent* enemyProjectileComponent;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class ULookAtPlayerComponent* lookAtPlayerComponent;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

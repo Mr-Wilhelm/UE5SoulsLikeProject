@@ -1,0 +1,18 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\source\\soulsproject\\private\\characters\\lookatplayercomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\x64\\soulsprojecteditor\\development\\unrealed\\sharedpch.unrealed.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\soulsproject\\definitions.soulsproject.h",
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\source\\soulsproject\\public\\characters\\lookatplayercomponent.h",
+            "c:\\personalprojects\\ue5\\soulslike\\ue5soulslikeproject\\soulsproject\\intermediate\\build\\win64\\unrealeditor\\inc\\soulsproject\\uht\\lookatplayercomponent.generated.h",
+            "c:\\ue5\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "c:\\ue5\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
+            "c:\\ue5\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

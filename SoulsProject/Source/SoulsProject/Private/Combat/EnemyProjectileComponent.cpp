@@ -2,6 +2,7 @@
 
 
 #include "Combat/EnemyProjectileComponent.h"
+#include "Kismet/KismetMathLibrary.h"
 
 // Sets default values for this component's properties
 UEnemyProjectileComponent::UEnemyProjectileComponent()
@@ -36,6 +37,11 @@ void UEnemyProjectileComponent::SpawnProjectile(FName spawnPosComponentName, TSu
 {
 	USceneComponent* spawnPointComp{ Cast<USceneComponent>(GetOwner()->GetDefaultSubobjectByName(spawnPosComponentName)) };
 	FVector spawnPos{ spawnPointComp->GetComponentLocation() };
-	GetWorld()->SpawnActor(projectileClass, &spawnPos);
+
+	FVector playerPos{ GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation() };
+
+	FRotator spawnRot{UKismetMathLibrary::FindLookAtRotation(spawnPos, playerPos)};	//rotate in the direction of the player (or whatever the target is)
+
+	GetWorld()->SpawnActor(projectileClass, &spawnPos, &spawnRot);
 }
 

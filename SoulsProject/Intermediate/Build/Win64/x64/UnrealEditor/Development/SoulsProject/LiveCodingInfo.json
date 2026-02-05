@@ -8,6 +8,7 @@
 			"CombatComponent.gen.cpp.obj",
 			"EEnemyState.gen.cpp.obj",
 			"Enemy.gen.cpp.obj",
+			"EnemyProjectileComponent.gen.cpp.obj",
 			"EStat.gen.cpp.obj",
 			"Fighter.gen.cpp.obj",
 			"LockOnComponent.gen.cpp.obj",
@@ -38,9 +39,12 @@
 			"Throwaway.cpp.obj",
 			"SoulsProject.cpp.obj",
 			"BossCharacter.gen.cpp.obj",
-			"EnemyProjectileComponent.gen.cpp.obj",
+			"LookAtPlayerAnimNotifyState.gen.cpp.obj",
+			"LookAtPlayerComponent.gen.cpp.obj",
 			"SoulsProject.init.gen.cpp.obj",
+			"LookAtPlayerAnimNotifyState.cpp.obj",
 			"BossCharacter.cpp.obj",
+			"LookAtPlayerComponent.cpp.obj",
 			"EnemyProjectileComponent.cpp.obj"
 		]
 	}

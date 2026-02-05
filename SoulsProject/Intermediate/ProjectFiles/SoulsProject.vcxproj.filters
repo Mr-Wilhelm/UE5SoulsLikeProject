@@ -54,6 +54,9 @@
     <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\BossAnimInstance.cpp">
       <Filter>Source\SoulsProject\Private\Animations</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\LookAtPlayerAnimNotifyState.cpp">
+      <Filter>Source\SoulsProject\Private\Animations</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Animations\PlayerAnimInstance.cpp">
       <Filter>Source\SoulsProject\Private\Animations</Filter>
     </ClCompile>
@@ -70,6 +73,9 @@
       <Filter>Source\SoulsProject\Private\Characters</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\EStat.cpp">
+      <Filter>Source\SoulsProject\Private\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\LookAtPlayerComponent.cpp">
       <Filter>Source\SoulsProject\Private\Characters</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\PlayerActionsComponent.cpp">
@@ -129,6 +135,9 @@
     <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\BossAnimInstance.h">
       <Filter>Source\SoulsProject\Public\Animations</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\LookAtPlayerAnimNotifyState.h">
+      <Filter>Source\SoulsProject\Public\Animations</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Animations\PlayerAnimInstance.h">
       <Filter>Source\SoulsProject\Public\Animations</Filter>
     </ClInclude>
@@ -145,6 +154,9 @@
       <Filter>Source\SoulsProject\Public\Characters</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\EStat.h">
+      <Filter>Source\SoulsProject\Public\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\LookAtPlayerComponent.h">
       <Filter>Source\SoulsProject\Public\Characters</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\PlayerActionsComponent.h">
