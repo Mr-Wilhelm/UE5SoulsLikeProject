@@ -17,6 +17,11 @@ class SOULSPROJECT_API UBossAnimInstance : public UAnimInstance
 
 protected:
 	
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	float currentSpeed{ 0.0f };
+
+public:
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	bool isCharging{ false };
 };

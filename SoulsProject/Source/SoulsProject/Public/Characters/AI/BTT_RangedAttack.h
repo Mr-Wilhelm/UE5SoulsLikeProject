@@ -17,6 +17,8 @@ class SOULSPROJECT_API UBTT_RangedAttack : public UBTTaskNode
 	UPROPERTY(EditAnywhere)
 	UAnimMontage* animMontage;	//using pointer for more memory efficiency.
 
+	double threshold{ 0.9 };
+
 public:
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	

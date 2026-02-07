@@ -3,12 +3,10 @@
 	{
 		"Module.SoulsProject.cpp.obj": [
 			"BlockingComponent.gen.cpp.obj",
-			"BossAnimInstance.gen.cpp.obj",
-			"BossCharacter.gen.cpp.obj",
 			"BTT_RangedAttack.gen.cpp.obj",
 			"CombatComponent.gen.cpp.obj",
-			"EEnemyState.gen.cpp.obj",
 			"Enemy.gen.cpp.obj",
+			"EnemyProjectile.gen.cpp.obj",
 			"EnemyProjectileComponent.gen.cpp.obj",
 			"EStat.gen.cpp.obj",
 			"Fighter.gen.cpp.obj",
@@ -23,13 +21,10 @@
 			"Throwaway.gen.cpp.obj",
 			"ToggleTraceNotifyState.gen.cpp.obj",
 			"TraceComponent.gen.cpp.obj",
-			"BossAnimInstance.cpp.obj",
 			"LookAtPlayerAnimNotifyState.cpp.obj",
 			"PlayerAnimInstance.cpp.obj",
 			"ToggleTraceNotifyState.cpp.obj",
-			"BTT_RangedAttack.cpp.obj",
 			"BossCharacter.cpp.obj",
-			"EEnemyState.cpp.obj",
 			"EStat.cpp.obj",
 			"LookAtPlayerComponent.cpp.obj",
 			"PlayerActionsComponent.cpp.obj",
@@ -37,6 +32,7 @@
 			"StatsComponent.cpp.obj",
 			"BlockingComponent.cpp.obj",
 			"CombatComponent.cpp.obj",
+			"EnemyProjectile.cpp.obj",
 			"EnemyProjectileComponent.cpp.obj",
 			"LockOnComponent.cpp.obj",
 			"TraceComponent.cpp.obj",
@@ -45,9 +41,15 @@
 			"PlayerInterface.cpp.obj",
 			"Throwaway.cpp.obj",
 			"SoulsProject.cpp.obj",
-			"EnemyProjectile.gen.cpp.obj",
+			"BossAnimInstance.gen.cpp.obj",
+			"BossCharacter.gen.cpp.obj",
+			"BTT_ChargeAttack.gen.cpp.obj",
+			"EEnemyState.gen.cpp.obj",
 			"SoulsProject.init.gen.cpp.obj",
-			"EnemyProjectile.cpp.obj"
+			"BossAnimInstance.cpp.obj",
+			"BTT_ChargeAttack.cpp.obj",
+			"BTT_RangedAttack.cpp.obj",
+			"EEnemyState.cpp.obj"
 		]
 	}
 }

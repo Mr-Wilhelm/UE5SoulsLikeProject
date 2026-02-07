@@ -36,9 +36,7 @@
 /FUNCTIONPADMIN:6
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\SoulsProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.InclOrderUnreal5_0.h.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\Module.SoulsProject.cpp.obj"
-"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\EnemyProjectile.cpp.obj"
-"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\EnemyProjectile.gen.cpp.obj"
-"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\SoulsProject.init.gen.cpp.obj"
+"C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\BTT_RangedAttack.cpp.obj"
 "C:\PersonalProjects\UE5\SoulsLike\UE5SoulsLikeProject\SoulsProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulsProject\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"

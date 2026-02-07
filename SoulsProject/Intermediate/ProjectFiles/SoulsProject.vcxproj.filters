@@ -90,6 +90,9 @@
     <Filter Include="Source\SoulsProject\Private\Characters\AI">
       <UniqueIdentifier>{938B921A-5B5C-3281-AB5B-B06FB9FD67D8}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\AI\BTT_ChargeAttack.cpp">
+      <Filter>Source\SoulsProject\Private\Characters\AI</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulsProject\Private\Characters\AI\BTT_RangedAttack.cpp">
       <Filter>Source\SoulsProject\Private\Characters\AI</Filter>
     </ClCompile>
@@ -174,6 +177,9 @@
     <Filter Include="Source\SoulsProject\Public\Characters\AI">
       <UniqueIdentifier>{6BA38A46-16CE-3D48-82D7-53523C1E7045}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\AI\BTT_ChargeAttack.h">
+      <Filter>Source\SoulsProject\Public\Characters\AI</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulsProject\Public\Characters\AI\BTT_RangedAttack.h">
       <Filter>Source\SoulsProject\Public\Characters\AI</Filter>
     </ClInclude>

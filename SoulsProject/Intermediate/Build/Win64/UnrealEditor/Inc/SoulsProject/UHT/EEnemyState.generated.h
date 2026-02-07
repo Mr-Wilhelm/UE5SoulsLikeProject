@@ -21,5 +21,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FOREACH_ENUM_EENEMYSTATE(op) \
 	op(Idle) \
-	op(Range) 
+	op(Range) \
+	op(Charge) \
+	op(Melee) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
