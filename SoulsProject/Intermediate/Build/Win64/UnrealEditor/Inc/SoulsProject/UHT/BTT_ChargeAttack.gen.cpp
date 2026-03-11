@@ -75,7 +75,6 @@ void EmptyLinkFunctionForGeneratedCodeBTT_ChargeAttack() {}
 	{
 		return UBTT_ChargeAttack::StaticClass();
 	}
-	UBTT_ChargeAttack::UBTT_ChargeAttack(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UBTT_ChargeAttack);
 	UBTT_ChargeAttack::~UBTT_ChargeAttack() {}
 	struct Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_AI_BTT_ChargeAttack_h_Statics

@@ -5,7 +5,13 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Content/Levels/LandscapeLevel.umap"
+				"C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Content/Levels/LandscapeLevel.umap",
+				"C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Content/Animations/ABP_Boss.uasset",
+				"C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Content/Models/ParagonAurora/Characters/Heroes/Aurora/Animations/Ability_Q.uasset",
+				"C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Content/Models/ParagonAurora/Characters/Heroes/Aurora/Meshes/Aurora_Skeleton.uasset",
+				"C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Content/Characters/AI/BB_Boss.uasset",
+				"C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Content/Fab/Medieval_Knight_Sculpture_Game_ready_01/Materials/ID02.uasset"
 			]
 		}
 	]
