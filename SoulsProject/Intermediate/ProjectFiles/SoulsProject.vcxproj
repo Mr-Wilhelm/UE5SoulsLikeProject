@@ -27,7 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0B4FA709-B4F2-3BD3-8647-E3891888CFD7}</ProjectGuid>
+    <ProjectGuid>{7F228DD1-E8C6-3186-A64D-218D2FA0F2E3}</ProjectGuid>
     <RootNamespace>SoulsProject</RootNamespace>
   </PropertyGroup>
   <Import Project="UECommon.props" />

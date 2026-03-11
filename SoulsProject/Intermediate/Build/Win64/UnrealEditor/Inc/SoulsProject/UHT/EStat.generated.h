@@ -16,7 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SOULSPROJECT_EStat_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_PersonalProjects_UE5_SoulsLike_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_EStat_h
+#define CURRENT_FILE_ID FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_EStat_h
 
 
 #define FOREACH_ENUM_ESTAT(op) \
