@@ -29,7 +29,6 @@
 			"PlayerAnimInstance.cpp.obj",
 			"ToggleTraceNotifyState.cpp.obj",
 			"BTT_RangedAttack.cpp.obj",
-			"BossCharacter.cpp.obj",
 			"EEnemyState.cpp.obj",
 			"EStat.cpp.obj",
 			"LookAtPlayerComponent.cpp.obj",
@@ -49,7 +48,8 @@
 			"SoulsProject.cpp.obj",
 			"BTT_ChargeAttack.gen.cpp.obj",
 			"SoulsProject.init.gen.cpp.obj",
-			"BTT_ChargeAttack.cpp.obj"
+			"BTT_ChargeAttack.cpp.obj",
+			"BossCharacter.cpp.obj"
 		]
 	}
 }

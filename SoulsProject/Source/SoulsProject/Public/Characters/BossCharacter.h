@@ -31,6 +31,8 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class ULookAtPlayerComponent* lookAtPlayerComponent;
 
+	FScriptDelegate MoveCompletedDelegate;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

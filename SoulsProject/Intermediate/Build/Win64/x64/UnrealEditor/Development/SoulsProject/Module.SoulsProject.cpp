@@ -26,7 +26,6 @@
 #include "C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Source/SoulsProject/Private/Animations/PlayerAnimInstance.cpp"
 #include "C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Source/SoulsProject/Private/Animations/ToggleTraceNotifyState.cpp"
 #include "C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Source/SoulsProject/Private/Characters/AI/BTT_RangedAttack.cpp"
-#include "C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Source/SoulsProject/Private/Characters/BossCharacter.cpp"
 #include "C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Source/SoulsProject/Private/Characters/EEnemyState.cpp"
 #include "C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Source/SoulsProject/Private/Characters/EStat.cpp"
 #include "C:/PersonalProjects/UE5SoulsLikeProject/SoulsProject/Source/SoulsProject/Private/Characters/LookAtPlayerComponent.cpp"
