@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 	SOULSPROJECT_API UClass* Z_Construct_UClass_ABossCharacter_NoRegister();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UEnemy_NoRegister();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UEnemyProjectileComponent_NoRegister();
+	SOULSPROJECT_API UClass* Z_Construct_UClass_UFighter_NoRegister();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_ULookAtPlayerComponent_NoRegister();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UStatsComponent_NoRegister();
 	SOULSPROJECT_API UEnum* Z_Construct_UEnum_SoulsProject_EEnemyState();
@@ -60,7 +61,13 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABossCharacter_DetectPawn_Statics::Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//this means that this will override the GetDamage function from the Fighter Interface\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Characters/BossCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "this means that this will override the GetDamage function from the Fighter Interface" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABossCharacter_DetectPawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABossCharacter, nullptr, "DetectPawn", nullptr, nullptr, Z_Construct_UFunction_ABossCharacter_DetectPawn_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABossCharacter_DetectPawn_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABossCharacter_DetectPawn_Statics::BossCharacter_eventDetectPawn_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABossCharacter_DetectPawn_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABossCharacter_DetectPawn_Statics::Function_MetaDataParams) };
@@ -114,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABossCharacter_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABossCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABossCharacter_DetectPawn, "DetectPawn" }, // 4167194840
+		{ &Z_Construct_UFunction_ABossCharacter_DetectPawn, "DetectPawn" }, // 863007471
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABossCharacter_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -163,6 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ABossCharacter_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UEnemy_NoRegister, (int32)VTABLE_OFFSET(ABossCharacter, IEnemy), false },  // 934961268
+			{ Z_Construct_UClass_UFighter_NoRegister, (int32)VTABLE_OFFSET(ABossCharacter, IFighter), false },  // 3639994593
 		};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABossCharacter_Statics::InterfaceParams) < 64);
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABossCharacter_Statics::StaticCppClassTypeInfo = {
@@ -203,9 +211,9 @@ void EmptyLinkFunctionForGeneratedCodeBossCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABossCharacter, ABossCharacter::StaticClass, TEXT("ABossCharacter"), &Z_Registration_Info_UClass_ABossCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABossCharacter), 251676785U) },
+		{ Z_Construct_UClass_ABossCharacter, ABossCharacter::StaticClass, TEXT("ABossCharacter"), &Z_Registration_Info_UClass_ABossCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABossCharacter), 110963950U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_3374464331(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_1386429483(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_BossCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

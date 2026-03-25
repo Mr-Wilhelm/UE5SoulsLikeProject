@@ -6,12 +6,14 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "SoulsProject/Public/Combat/TraceComponent.h"
+#include "SoulsProject/Public/Combat/FTraceSockets.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTraceComponent() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UTraceComponent();
 	SOULSPROJECT_API UClass* Z_Construct_UClass_UTraceComponent_NoRegister();
+	SOULSPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FTraceSockets();
 	UPackage* Z_Construct_UPackage__Script_SoulsProject();
 // End Cross Module References
 	DEFINE_FUNCTION(UTraceComponent::execResetAttackTraceComp)
@@ -63,18 +65,11 @@ void EmptyLinkFunctionForGeneratedCodeTraceComponent() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Sockets_Inner;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_socketStart_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Sockets_MetaData[];
 #endif
-		static const UECodeGen_Private::FNamePropertyParams NewProp_socketStart;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_socketEnd_MetaData[];
-#endif
-		static const UECodeGen_Private::FNamePropertyParams NewProp_socketEnd;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_socketRotation_MetaData[];
-#endif
-		static const UECodeGen_Private::FNamePropertyParams NewProp_socketRotation;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_Sockets;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_boxCollisionLength_MetaData[];
 #endif
@@ -110,8 +105,9 @@ void EmptyLinkFunctionForGeneratedCodeTraceComponent() {}
 		{ "ModuleRelativePath", "Public/Combat/TraceComponent.h" },
 	};
 #endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTraceComponent_Statics::NewProp_Sockets_Inner = { "Sockets", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTraceSockets, METADATA_PARAMS(0, nullptr) }; // 2827252038
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketStart_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTraceComponent_Statics::NewProp_Sockets_MetaData[] = {
 		{ "Category", "TraceComponent" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "//the skeletal mesh component\n" },
@@ -122,43 +118,11 @@ void EmptyLinkFunctionForGeneratedCodeTraceComponent() {}
 #endif
 	};
 #endif
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketStart = { "socketStart", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTraceComponent, socketStart), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketStart_MetaData), Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketStart_MetaData) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketEnd_MetaData[] = {
-		{ "Category", "TraceComponent" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//name of the socket where the trace begins\n" },
-#endif
-		{ "ModuleRelativePath", "Public/Combat/TraceComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "name of the socket where the trace begins" },
-#endif
-	};
-#endif
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketEnd = { "socketEnd", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTraceComponent, socketEnd), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketEnd_MetaData), Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketEnd_MetaData) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketRotation_MetaData[] = {
-		{ "Category", "TraceComponent" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//name of the socket where the trace ends\n" },
-#endif
-		{ "ModuleRelativePath", "Public/Combat/TraceComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "name of the socket where the trace ends" },
-#endif
-	};
-#endif
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketRotation = { "socketRotation", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTraceComponent, socketRotation), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketRotation_MetaData), Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketRotation_MetaData) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTraceComponent_Statics::NewProp_Sockets = { "Sockets", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTraceComponent, Sockets), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTraceComponent_Statics::NewProp_Sockets_MetaData), Z_Construct_UClass_UTraceComponent_Statics::NewProp_Sockets_MetaData) }; // 2827252038
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTraceComponent_Statics::NewProp_boxCollisionLength_MetaData[] = {
 		{ "Category", "TraceComponent" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//socket rotation\n" },
-#endif
 		{ "ModuleRelativePath", "Public/Combat/TraceComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "socket rotation" },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_UTraceComponent_Statics::NewProp_boxCollisionLength = { "boxCollisionLength", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTraceComponent, boxCollisionLength), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTraceComponent_Statics::NewProp_boxCollisionLength_MetaData), Z_Construct_UClass_UTraceComponent_Statics::NewProp_boxCollisionLength_MetaData) };
@@ -185,9 +149,8 @@ void EmptyLinkFunctionForGeneratedCodeTraceComponent() {}
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UTraceComponent_Statics::NewProp_isAttacking = { "isAttacking", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UTraceComponent), &Z_Construct_UClass_UTraceComponent_Statics::NewProp_isAttacking_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTraceComponent_Statics::NewProp_isAttacking_MetaData), Z_Construct_UClass_UTraceComponent_Statics::NewProp_isAttacking_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTraceComponent_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketStart,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketEnd,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTraceComponent_Statics::NewProp_socketRotation,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTraceComponent_Statics::NewProp_Sockets_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTraceComponent_Statics::NewProp_Sockets,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTraceComponent_Statics::NewProp_boxCollisionLength,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTraceComponent_Statics::NewProp_debugMode,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTraceComponent_Statics::NewProp_isAttacking,
@@ -230,9 +193,9 @@ void EmptyLinkFunctionForGeneratedCodeTraceComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_TraceComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UTraceComponent, UTraceComponent::StaticClass, TEXT("UTraceComponent"), &Z_Registration_Info_UClass_UTraceComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTraceComponent), 853095239U) },
+		{ Z_Construct_UClass_UTraceComponent, UTraceComponent::StaticClass, TEXT("UTraceComponent"), &Z_Registration_Info_UClass_UTraceComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTraceComponent), 1460567226U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_TraceComponent_h_357074336(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_TraceComponent_h_1757704357(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_TraceComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_TraceComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

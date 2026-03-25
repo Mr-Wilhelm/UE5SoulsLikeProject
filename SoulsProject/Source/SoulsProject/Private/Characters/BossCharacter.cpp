@@ -7,6 +7,7 @@
 #include "Characters/LookAtPlayerComponent.h"
 #include "AIController.h"	//this include needs some funky stuff in the project.build file to not give errors
 #include "BehaviorTree/BlackboardComponent.h"
+#include "Characters/Estat.h"
 
 // Sets default values
 ABossCharacter::ABossCharacter()
@@ -43,6 +44,11 @@ void ABossCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+float ABossCharacter::GetDamage()
+{
+	return statsComponent->stats[EStat::Strength];
 }
 
 void ABossCharacter::DetectPawn(APawn* pawnDetected, APawn* pawnToFind)

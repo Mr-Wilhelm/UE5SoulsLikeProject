@@ -52,7 +52,4 @@ public:
 	virtual float GetDamage() override;	//this means that this will override the GetDamage function from the Fighter Interface
 
 	virtual bool HasStamina(float staminaCost) override; //overrides the HasStamina function from the player interface. We use player interface because the boss doesn't use stamina, only the player
-
-
-
 };

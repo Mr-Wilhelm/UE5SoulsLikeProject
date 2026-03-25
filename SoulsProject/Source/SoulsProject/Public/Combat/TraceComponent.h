@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Combat/FTraceSockets.h"
 #include "TraceComponent.generated.h"
 
 
@@ -15,13 +16,7 @@ class SOULSPROJECT_API UTraceComponent : public UActorComponent
 	USkeletalMeshComponent* skeletalComp;	//the skeletal mesh component
 	
 	UPROPERTY(EditAnywhere)
-	FName socketStart;	//name of the socket where the trace begins
-
-	UPROPERTY(EditAnywhere)
-	FName socketEnd;	//name of the socket where the trace ends
-
-	UPROPERTY(EditAnywhere)
-	FName socketRotation;	//socket rotation
+	TArray<FTraceSockets> Sockets;
 
 	UPROPERTY(EditAnywhere)
 	double boxCollisionLength{ 30.0 };

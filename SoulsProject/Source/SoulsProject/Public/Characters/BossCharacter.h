@@ -6,10 +6,11 @@
 #include "GameFramework/Character.h"
 #include "Interfaces/Enemy.h"
 #include "Characters/EEnemyState.h"
+#include "Interfaces/Fighter.h"
 #include "BossCharacter.generated.h"
 
 UCLASS()
-class SOULSPROJECT_API ABossCharacter : public ACharacter, public IEnemy
+class SOULSPROJECT_API ABossCharacter : public ACharacter, public IEnemy, public IFighter
 {
 	GENERATED_BODY()
 
@@ -43,6 +44,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual float GetDamage() override;	//this means that this will override the GetDamage function from the Fighter Interface
 
 	UFUNCTION(BlueprintCallable)
 	void DetectPawn(APawn* pawnDetected, APawn* pawnToFind);
