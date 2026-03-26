@@ -5,6 +5,7 @@
 #include "GameFramework/Character.h"
 #include "Animations/BossAnimInstance.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Characters/EEnemyState.h"
 
 UBTT_ChargeAttack::UBTT_ChargeAttack()
 {
@@ -24,6 +25,8 @@ void UBTT_ChargeAttack::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeM
 	}
 
 	if (!taskFinished) { return; }
+
+	OwnerComp.GetBlackboardComponent()->SetValueAsEnum(TEXT("CurrentState"), EEnemyState::Melee);
 
 	controllerRef->ReceiveMoveCompleted.Remove(MoveCompletedDelegate);	//remove delegate so it doesn't keep firing after task is finished
 

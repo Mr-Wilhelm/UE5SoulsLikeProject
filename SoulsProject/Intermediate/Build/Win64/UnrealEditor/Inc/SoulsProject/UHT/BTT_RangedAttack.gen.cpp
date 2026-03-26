@@ -33,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeBTT_RangedAttack() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_animMontage_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_animMontage;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_meleeSwitch_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_meleeSwitch;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -58,8 +62,16 @@ void EmptyLinkFunctionForGeneratedCodeBTT_RangedAttack() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_animMontage = { "animMontage", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBTT_RangedAttack, animMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_animMontage_MetaData), Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_animMontage_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_meleeSwitch_MetaData[] = {
+		{ "Category", "BTT_RangedAttack" },
+		{ "ModuleRelativePath", "Public/Characters/AI/BTT_RangedAttack.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_meleeSwitch = { "meleeSwitch", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBTT_RangedAttack, meleeSwitch), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_meleeSwitch_MetaData), Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_meleeSwitch_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBTT_RangedAttack_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_animMontage,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTT_RangedAttack_Statics::NewProp_meleeSwitch,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UBTT_RangedAttack_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UBTT_RangedAttack>::IsAbstract,
@@ -100,9 +112,9 @@ void EmptyLinkFunctionForGeneratedCodeBTT_RangedAttack() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_AI_BTT_RangedAttack_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UBTT_RangedAttack, UBTT_RangedAttack::StaticClass, TEXT("UBTT_RangedAttack"), &Z_Registration_Info_UClass_UBTT_RangedAttack, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTT_RangedAttack), 3032984931U) },
+		{ Z_Construct_UClass_UBTT_RangedAttack, UBTT_RangedAttack::StaticClass, TEXT("UBTT_RangedAttack"), &Z_Registration_Info_UClass_UBTT_RangedAttack, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTT_RangedAttack), 1233397064U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_AI_BTT_RangedAttack_h_2096115158(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_AI_BTT_RangedAttack_h_725033889(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_AI_BTT_RangedAttack_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Characters_AI_BTT_RangedAttack_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

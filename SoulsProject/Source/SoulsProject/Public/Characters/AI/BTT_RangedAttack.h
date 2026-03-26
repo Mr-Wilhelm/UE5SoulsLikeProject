@@ -19,6 +19,9 @@ class SOULSPROJECT_API UBTT_RangedAttack : public UBTTaskNode
 
 	double threshold{ 0.9 };
 
+	UPROPERTY(EditAnywhere)
+	float meleeSwitch{ 1250.0f };
+
 public:
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	

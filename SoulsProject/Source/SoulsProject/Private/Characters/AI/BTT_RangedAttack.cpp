@@ -14,6 +14,16 @@ EBTNodeResult::Type UBTT_RangedAttack::ExecuteTask(UBehaviorTreeComponent& Owner
 
 	if (!IsValid(characterRef)) { return EBTNodeResult::Failed; }
 
+	float distance{ OwnerComp.GetBlackboardComponent()->GetValueAsFloat(TEXT("Distance")) };
+
+	if(distance < meleeSwitch)	//if in melee range
+	{
+		OwnerComp.GetBlackboardComponent()->SetValueAsEnum(TEXT("CurrentState"), EEnemyState::Melee);	//set state to melee
+		AbortTask(OwnerComp, NodeMemory);	//abort current task
+
+		return EBTNodeResult::Aborted;
+	}
+
 	characterRef->PlayAnimMontage(animMontage);
 
 	double randomVal{ UKismetMathLibrary::RandomFloat() };	//this returns a double and not a float for some reason?
