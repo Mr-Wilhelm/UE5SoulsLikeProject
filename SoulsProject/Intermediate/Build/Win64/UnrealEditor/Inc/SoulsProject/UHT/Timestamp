@@ -1,7 +1,7 @@
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Throwaway.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Animations\BossAnimInstance.h
-C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Animations\PlayerAnimInstance.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Animations\LookAtPlayerAnimNotifyState.h
+C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Animations\PlayerAnimInstance.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Animations\ToggleTraceNotifyState.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Characters\BossCharacter.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Characters\EEnemyState.h
@@ -15,12 +15,12 @@ C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Characters\AI\BTT_MeleeAttack.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Characters\AI\BTT_RangedAttack.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\BlockingComponent.h
-C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\EnemyProjectile.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\CombatComponent.h
-C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\FTraceSockets.h
+C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\EnemyProjectile.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\EnemyProjectileComponent.h
-C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\TraceComponent.h
-C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Interfaces\Enemy.h
+C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\FTraceSockets.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\LockOnComponent.h
+C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Combat\TraceComponent.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Interfaces\Fighter.h
+C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Interfaces\Enemy.h
 C:\PersonalProjects\UE5SoulsLikeProject\SoulsProject\Source\SoulsProject\Public\Interfaces\PlayerInterface.h

@@ -39,6 +39,8 @@ public:
 	UPROPERTY(BlueprintAssignable)
 	FOnAttackPerformedSignature onAttackPerformedDelegate;
 
+	float animDuration;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -52,4 +54,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void ResetAttackCombatComp();
+
+	UFUNCTION()
+	void RandomAttack();
 };

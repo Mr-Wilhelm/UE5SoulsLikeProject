@@ -61,3 +61,10 @@ void UCombatComponent::ResetAttackCombatComp()
 	canAttack = true;
 }
 
+void UCombatComponent::RandomAttack()
+{
+	int randomIndex{ FMath::RandRange(0, attackAnims.Num() - 1) }; //get random index from array
+
+	animDuration = characterRef->PlayAnimMontage(attackAnims[randomIndex]);	//play random anim montage at random index
+}
+

@@ -66,6 +66,13 @@ void FOnAttackPerformedSignature_DelegateWrapper(const FMulticastScriptDelegate&
 	Parms.staminaToDrain=staminaToDrain;
 	OnAttackPerformedSignature.ProcessMulticastDelegate<UObject>(&Parms);
 }
+	DEFINE_FUNCTION(UCombatComponent::execRandomAttack)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RandomAttack();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UCombatComponent::execResetAttackCombatComp)
 	{
 		P_FINISH;
@@ -85,6 +92,7 @@ void FOnAttackPerformedSignature_DelegateWrapper(const FMulticastScriptDelegate&
 		UClass* Class = UCombatComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ComboAttack", &UCombatComponent::execComboAttack },
+			{ "RandomAttack", &UCombatComponent::execRandomAttack },
 			{ "ResetAttackCombatComp", &UCombatComponent::execResetAttackCombatComp },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -108,6 +116,28 @@ void FOnAttackPerformedSignature_DelegateWrapper(const FMulticastScriptDelegate&
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UCombatComponent_ComboAttack_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UCombatComponent_RandomAttack_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCombatComponent_RandomAttack_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Combat/CombatComponent.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UCombatComponent_RandomAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCombatComponent, nullptr, "RandomAttack", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UCombatComponent_RandomAttack_Statics::Function_MetaDataParams), Z_Construct_UFunction_UCombatComponent_RandomAttack_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_UCombatComponent_RandomAttack()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UCombatComponent_RandomAttack_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -173,6 +203,7 @@ void FOnAttackPerformedSignature_DelegateWrapper(const FMulticastScriptDelegate&
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UCombatComponent_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_UCombatComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UCombatComponent_ComboAttack, "ComboAttack" }, // 1373312785
+		{ &Z_Construct_UFunction_UCombatComponent_RandomAttack, "RandomAttack" }, // 3671999020
 		{ &Z_Construct_UFunction_UCombatComponent_ResetAttackCombatComp, "ResetAttackCombatComp" }, // 2422895707
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UCombatComponent_Statics::FuncInfo) < 2048);
@@ -263,9 +294,9 @@ void FOnAttackPerformedSignature_DelegateWrapper(const FMulticastScriptDelegate&
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_CombatComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UCombatComponent, UCombatComponent::StaticClass, TEXT("UCombatComponent"), &Z_Registration_Info_UClass_UCombatComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCombatComponent), 1360695454U) },
+		{ Z_Construct_UClass_UCombatComponent, UCombatComponent::StaticClass, TEXT("UCombatComponent"), &Z_Registration_Info_UClass_UCombatComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCombatComponent), 1197938064U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_CombatComponent_h_2803209468(TEXT("/Script/SoulsProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_CombatComponent_h_2147831600(TEXT("/Script/SoulsProject"),
 		Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_CombatComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PersonalProjects_UE5SoulsLikeProject_SoulsProject_Source_SoulsProject_Public_Combat_CombatComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

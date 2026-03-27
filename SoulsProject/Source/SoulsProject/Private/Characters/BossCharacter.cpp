@@ -8,6 +8,7 @@
 #include "AIController.h"	//this include needs some funky stuff in the project.build file to not give errors
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Characters/Estat.h"
+#include "Combat/CombatComponent.h"
 
 // Sets default values
 ABossCharacter::ABossCharacter()
@@ -18,6 +19,7 @@ ABossCharacter::ABossCharacter()
 	statsComponent = CreateDefaultSubobject<UStatsComponent>(TEXT("Stats Component"));
 	enemyProjectileComponent = CreateDefaultSubobject<UEnemyProjectileComponent>(TEXT("Enemy Projectile Component"));
 	lookAtPlayerComponent = CreateDefaultSubobject<ULookAtPlayerComponent>(TEXT("Look At Player Component"));
+	combatComponent = CreateDefaultSubobject<UCombatComponent>(TEXT("Combat Component"));
 }
 
 // Called when the game starts or when spawned
@@ -58,5 +60,15 @@ void ABossCharacter::DetectPawn(APawn* pawnDetected, APawn* pawnToFind)
 	if (pawnDetected != pawnToFind || currentState != EEnemyState::Idle) { return; }
 
 	blackboardComp->SetValueAsEnum(TEXT("CurrentState"), EEnemyState::Range);
+}
+
+void ABossCharacter::Attack()
+{
+	combatComponent->RandomAttack();
+}
+
+float ABossCharacter::GetAnimationDuration()
+{
+	return combatComponent->animDuration;
 }
 

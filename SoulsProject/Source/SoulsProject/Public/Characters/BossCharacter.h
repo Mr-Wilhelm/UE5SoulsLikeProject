@@ -34,6 +34,9 @@ public:
 
 	FScriptDelegate MoveCompletedDelegate;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	class UCombatComponent* combatComponent;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -50,4 +53,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void DetectPawn(APawn* pawnDetected, APawn* pawnToFind);
 
+	virtual void Attack() override;
+
+	virtual float GetAnimationDuration() override;
 };

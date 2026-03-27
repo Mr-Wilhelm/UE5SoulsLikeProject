@@ -4,12 +4,16 @@
 #include "Characters/AI/BTT_MeleeAttack.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "AIController.h"
+#include "Interfaces/Fighter.h"
+#include "GameFramework/Character.h"
 
 EBTNodeResult::Type UBTT_MeleeAttack::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
 	bIsFinished = false;
 
 	float distance{ OwnerComp.GetBlackboardComponent()->GetValueAsFloat(TEXT("Distance")) };
+
+	AAIController* AIRef{ OwnerComp.GetAIOwner()};
 
 	if (distance > attackRadius)
 	{
@@ -18,10 +22,20 @@ EBTNodeResult::Type UBTT_MeleeAttack::ExecuteTask(UBehaviorTreeComponent& OwnerC
 		moveRequest.SetUsePathfinding(true);	//lets AI use pathfinding
 		moveRequest.SetAcceptanceRadius(acceptanceRadius);
 
-		OwnerComp.GetAIOwner()->MoveTo(moveRequest);
-		OwnerComp.GetAIOwner()->SetFocus(playerRef);
+		AIRef->MoveTo(moveRequest);
+		AIRef->SetFocus(playerRef);
 
-		OwnerComp.GetAIOwner()->ReceiveMoveCompleted.AddUnique(moveDelegate);
+		AIRef->ReceiveMoveCompleted.AddUnique(moveDelegate);
+	}
+
+	else
+	{
+		IFighter* fighterRef{ Cast<IFighter>(AIRef->GetCharacter()) };
+		fighterRef->Attack();
+
+		FTimerHandle AttackTimerHandle;
+
+		AIRef->GetCharacter()->GetWorldTimerManager().SetTimer(AttackTimerHandle, this, &UBTT_MeleeAttack::FinishAttackTask, fighterRef->GetAnimationDuration(), false);
 	}
 
 	return EBTNodeResult::InProgress;
